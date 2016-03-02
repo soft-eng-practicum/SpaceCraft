@@ -4,7 +4,11 @@ import com.almasb.fxgl.app.GameApplication;
 import com.almasb.fxgl.asset.Texture;
 import com.almasb.fxgl.entity.EntityView;
 import com.almasb.fxgl.entity.GameEntity;
+import com.almasb.fxgl.input.*;
+import com.almasb.fxgl.input.InputMapping;
+import com.almasb.fxgl.physics.PhysicsWorld;
 import com.almasb.fxgl.settings.GameSettings;
+import javafx.scene.input.KeyCode;
 
 public class SpaceInvadersApp extends GameApplication
 {
@@ -18,38 +22,58 @@ public class SpaceInvadersApp extends GameApplication
 		
 	}
 	
-	private Texture dropletTexture;
+	private Texture spaceshipTexture;
+	private Texture enemyTexture;
 
 	@Override
 	protected void initAssets()
 	{
-		dropletTexture = getAssetLoader().loadTexture("droplet.png");
+		spaceshipTexture = getAssetLoader().loadTexture("spaceship.png");
+		enemyTexture = getAssetLoader().loadTexture("enemy.png");
 		
 	}
 
 	@Override
 	protected void initGame()
 	{
-		GameEntity droplet = new GameEntity();
-		droplet.getPositionComponent().setValue(200,2  00);
-		droplet.getMainViewComponent().setView(new EntityView(dropletTexture));
+		GameEntity enemy = new GameEntity();
+		enemy.getMainViewComponent().setView(new EntityView(enemyTexture));
 		
-		getGameWorld().addEntity(droplet);
+		getGameWorld().addEntity(enemy);
 		
+		GameEntity spaceship = new GameEntity();
+		spaceship.getPositionComponent().setValue(220,600);
+		spaceship.getMainViewComponent().setView(new EntityView(spaceshipTexture));
+
+		getGameWorld().addEntity(spaceship);
 		
+		for(int y = 0; y < 5; y++)
+		{
+			for(int x = 0; x <10; x++)
+			{
+				initEnemies(x * 40 + 10, y * 40 + 10);
+			}
+		}
+
 	}
 
 	@Override
 	protected void initInput()
 	{
-		// TODO Auto-generated method stub
+		Input input = getInput();
+		
+		input.addInputMapping(new InputMapping("Move Left", KeyCode.A));
+		input.addInputMapping(new InputMapping("Move Right", KeyCode.D));
+        input.addInputMapping(new InputMapping("Shoot", KeyCode.F));
 		
 	}
 
 	@Override
 	protected void initPhysics()
 	{
-		// TODO Auto-generated method stub
+		//PhysicsWorld worldPhysics = getPhysicsWorld();
+		//worldPhysics.addCollisionHandler(new BulletPlayerHandler());
+		
 		
 	}
 
@@ -65,6 +89,18 @@ public class SpaceInvadersApp extends GameApplication
 	{
 		// TODO Auto-generated method stub
 		
+	}
+	
+	private void initEnemies(double x, double y)
+	{
+		GameEntity enemy = new GameEntity();
+		enemy.getPositionComponent().setValue(x,y);
+		
+		Texture enemyTexture = getAssetLoader().loadTexture("enemy.png");
+		enemyTexture.setFitWidth(40);
+		enemyTexture.setFitHeight(40);
+		
+		getGameWorld().addEntity(enemy);
 	}
 	
 	public static void main(String [] args)
