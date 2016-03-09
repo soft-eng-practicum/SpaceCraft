@@ -12,10 +12,16 @@ import javafx.scene.input.KeyCode;
 
 public class SpaceInvadersApp extends GameApplication
 {
+	
+	
 	@Override
 	protected void initSettings(GameSettings settings)
 	{
+
 		settings.setMenuEnabled(true);
+
+		settings.setTitle("Space Invaders 0.1dev");
+
 		settings.setWidth(480);
 		settings.setHeight(800);
 		settings.setIntroEnabled(false);
@@ -94,14 +100,14 @@ public class SpaceInvadersApp extends GameApplication
 	
 	private void initEnemies(double x, double y)
 	{
-		GameEntity enemy = new GameEntity();
-		enemy.getPositionComponent().setValue(x,y);
+		
+		
 		
 		Texture enemyTexture = getAssetLoader().loadTexture("enemy.png");
 		enemyTexture.setFitWidth(40);
 		enemyTexture.setFitHeight(40);
 		
-		getGameWorld().addEntity(enemy);
+		
 	}
 	
 	public static void main(String [] args)
