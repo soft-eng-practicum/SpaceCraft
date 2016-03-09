@@ -1,0 +1,361 @@
+01 Mar 2016, 22:44:24.201 [   INFO] [         FXGL.Logger] [JavaFX Application Thread] Logger initialized with level: CONFIG
+01 Mar 2016, 22:44:24.204 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] CPU cores: 6
+01 Mar 2016, 22:44:24.206 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] Free Memory: 111MB
+01 Mar 2016, 22:44:24.207 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] Max Memory: 1800MB
+01 Mar 2016, 22:44:24.207 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] Total Memory: 123MB
+01 Mar 2016, 22:44:24.207 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] System Properties:
+01 Mar 2016, 22:44:24.208 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.cpu.isalist=amd64
+01 Mar 2016, 22:44:24.208 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.desktop=windows
+01 Mar 2016, 22:44:24.209 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.io.unicode.encoding=UnicodeLittle
+01 Mar 2016, 22:44:24.209 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.cpu.endian=little
+01 Mar 2016, 22:44:24.209 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+01 Mar 2016, 22:44:24.209 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] file.separator=\
+01 Mar 2016, 22:44:24.210 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.vendor=Oracle Corporation
+01 Mar 2016, 22:44:24.210 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.boot.class.path=C:\Program Files\Java\jre1.8.0_71\lib\resources.jar;C:\Program Files\Java\jre1.8.0_71\lib\rt.jar;C:\Program Files\Java\jre1.8.0_71\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_71\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_71\lib\jce.jar;C:\Program Files\Java\jre1.8.0_71\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_71\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_71\classes
+01 Mar 2016, 22:44:24.210 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.ext.dirs=C:\Program Files\Java\jre1.8.0_71\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+01 Mar 2016, 22:44:24.210 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.version=1.8.0_71
+01 Mar 2016, 22:44:24.211 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.vm.info=mixed mode
+01 Mar 2016, 22:44:24.211 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] awt.toolkit=sun.awt.windows.WToolkit
+01 Mar 2016, 22:44:24.211 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] user.language=en
+01 Mar 2016, 22:44:24.211 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.specification.vendor=Oracle Corporation
+01 Mar 2016, 22:44:24.212 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.java.command=com.chromalife.SpaceInvaders.SpaceInvadersApp
+01 Mar 2016, 22:44:24.212 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.home=C:\Program Files\Java\jre1.8.0_71
+01 Mar 2016, 22:44:24.212 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.arch.data.model=64
+01 Mar 2016, 22:44:24.212 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.vm.specification.version=1.8
+01 Mar 2016, 22:44:24.213 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.class.path=G:\SpaceInvaders\target\classes;C:\Users\Anwar Saleeby\.m2\repository\com\github\AlmasB\FXGL\0.2.1-0.2.0-gba5970d-32\FXGL-0.2.1-0.2.0-gba5970d-32.jar;C:\Users\Anwar Saleeby\.m2\repository\com\google\inject\guice\4.0\guice-4.0.jar;C:\Users\Anwar Saleeby\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Anwar Saleeby\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Anwar Saleeby\.m2\repository\com\google\guava\guava\16.0.1\guava-16.0.1.jar;C:\Users\Anwar Saleeby\.m2\repository\org\jfxtras\jfxtras-window\8.0-r4\jfxtras-window-8.0-r4.jar;C:\Users\Anwar Saleeby\.m2\repository\org\jfxtras\jfxtras-common\8.0-r4\jfxtras-common-8.0-r4.jar;C:\Users\Anwar Saleeby\.m2\repository\com\github\AlmasB\FXEventBus\1.0\FXEventBus-1.0.jar;C:\Users\Anwar Saleeby\.m2\repository\com\github\AlmasB\Ents\1.0\Ents-1.0.jar;C:\Users\Anwar Saleeby\.m2\repository\org\apache\logging\log4j\log4j-api\2.5\log4j-api-2.5.jar;C:\Users\Anwar Saleeby\.m2\repository\org\apache\logging\log4j\log4j-core\2.5\log4j-core-2.5.jar;C:\Users\Anwar Saleeby\.m2\repository\com\github\AlmasB\AStar\1.0\AStar-1.0.jar
+01 Mar 2016, 22:44:24.213 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] user.name=Anwar Saleeby
+01 Mar 2016, 22:44:24.213 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] file.encoding=Cp1252
+01 Mar 2016, 22:44:24.213 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.specification.version=1.8
+01 Mar 2016, 22:44:24.214 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.awt.printerjob=sun.awt.windows.WPrinterJob
+01 Mar 2016, 22:44:24.214 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] user.timezone=America/New_York
+01 Mar 2016, 22:44:24.214 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] user.home=C:\Users\Anwar Saleeby
+01 Mar 2016, 22:44:24.215 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] os.version=10.0
+01 Mar 2016, 22:44:24.215 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+01 Mar 2016, 22:44:24.215 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.specification.name=Java Platform API Specification
+01 Mar 2016, 22:44:24.216 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.class.version=52.0
+01 Mar 2016, 22:44:24.216 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.library.path=C:\Program Files\Java\jre1.8.0_71\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_73/bin/server;C:/Program Files/Java/jre1.8.0_73/bin;C:/Program Files/Java/jre1.8.0_73/lib/amd64;C:\oraclexe\app\oracle\product\11.2.0\server\bin;;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Anwar Saleeby\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Program Files\MongoDB\Server\3.2\bin;C:\Users\Anwar Saleeby\AppData\Local\Programs\Python\Python35-32;C:\eclipse;;.
+01 Mar 2016, 22:44:24.216 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.jnu.encoding=Cp1252
+01 Mar 2016, 22:44:24.217 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] os.name=Windows 10
+01 Mar 2016, 22:44:24.217 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] user.variant=
+01 Mar 2016, 22:44:24.217 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.vm.specification.vendor=Oracle Corporation
+01 Mar 2016, 22:44:24.217 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.io.tmpdir=C:\Users\ANWARS~1\AppData\Local\Temp\
+01 Mar 2016, 22:44:24.218 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] line.separator=
+
+01 Mar 2016, 22:44:24.218 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.endorsed.dirs=C:\Program Files\Java\jre1.8.0_71\lib\endorsed
+01 Mar 2016, 22:44:24.218 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] os.arch=amd64
+01 Mar 2016, 22:44:24.218 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] javafx.runtime.version=8.0.71-b15
+01 Mar 2016, 22:44:24.219 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+01 Mar 2016, 22:44:24.219 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.runtime.version=1.8.0_71-b15
+01 Mar 2016, 22:44:24.219 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.vm.specification.name=Java Virtual Machine Specification
+01 Mar 2016, 22:44:24.219 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] user.dir=G:\SpaceInvaders
+01 Mar 2016, 22:44:24.220 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] user.country=US
+01 Mar 2016, 22:44:24.220 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] user.script=
+01 Mar 2016, 22:44:24.220 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.java.launcher=SUN_STANDARD
+01 Mar 2016, 22:44:24.220 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.os.patch.level=
+01 Mar 2016, 22:44:24.220 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+01 Mar 2016, 22:44:24.221 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] file.encoding.pkg=sun.io
+01 Mar 2016, 22:44:24.221 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] path.separator=;
+01 Mar 2016, 22:44:24.221 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.vm.vendor=Oracle Corporation
+01 Mar 2016, 22:44:24.221 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.vendor.url=http://java.oracle.com/
+01 Mar 2016, 22:44:24.222 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.boot.library.path=C:\Program Files\Java\jre1.8.0_71\bin
+01 Mar 2016, 22:44:24.222 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.vm.version=25.71-b15
+01 Mar 2016, 22:44:24.222 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.runtime.name=Java(TM) SE Runtime Environment
+01 Mar 2016, 22:44:24.222 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] javafx.version=8.0.71
+01 Mar 2016, 22:44:24.227 [   INFO] [        FXGL.Version] [JavaFX Application Thread] FXGL-0.2.1-SNAPSHOT
+01 Mar 2016, 22:44:24.227 [   INFO] [        FXGL.Version] [JavaFX Application Thread] Source code and latest builds at: https://github.com/AlmasB/FXGL
+01 Mar 2016, 22:44:24.233 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Game_clinit()
+01 Mar 2016, 22:44:24.239 [  FINER] [    FXGL.Application] [JavaFX-Launcher] FXGL_init()
+01 Mar 2016, 22:44:24.266 [  FINER] [    FXGL.Application] [JavaFX Application Thread] FXGL_start()
+01 Mar 2016, 22:44:24.267 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Initializing system properties
+01 Mar 2016, 22:44:24.269 [  FINER] [    FXGL.Application] [JavaFX Application Thread] sound.notification = system/notification.wav
+01 Mar 2016, 22:44:24.269 [  FINER] [    FXGL.Application] [JavaFX Application Thread] asset.cache.size = 35
+01 Mar 2016, 22:44:24.269 [  FINER] [    FXGL.Application] [JavaFX Application Thread] ui.font = Copperplate_Gothic_Light_Regular.ttf
+01 Mar 2016, 22:44:24.269 [  FINER] [    FXGL.Application] [JavaFX Application Thread] sound.menu.back = menu/back.wav
+01 Mar 2016, 22:44:24.270 [  FINER] [    FXGL.Application] [JavaFX Application Thread] sound.menu.select = menu/select.wav
+01 Mar 2016, 22:44:24.270 [  FINER] [    FXGL.Application] [JavaFX Application Thread] physics.ppm = 50
+01 Mar 2016, 22:44:24.270 [  FINER] [    FXGL.Application] [JavaFX Application Thread] ui.css = fxgl.css
+01 Mar 2016, 22:44:24.270 [  FINER] [    FXGL.Application] [JavaFX Application Thread] ui.icon.name = fxgl_icon.png
+01 Mar 2016, 22:44:24.270 [  FINER] [    FXGL.Application] [JavaFX Application Thread] sound.menu.press = menu/press.wav
+01 Mar 2016, 22:44:24.271 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Initializing user properties
+01 Mar 2016, 22:44:24.271 [   INFO] [    FXGL.Application] [JavaFX Application Thread] User properties not found. Using system
+01 Mar 2016, 22:44:24.280 [   INFO] [         FXGL.Logger] [JavaFX Application Thread] Logger level set to: CONFIG
+01 Mar 2016, 22:44:24.280 [   INFO] [    FXGL.Application] [JavaFX Application Thread] Application Mode: DEVELOPER
+01 Mar 2016, 22:44:24.798 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Services configuration complete
+01 Mar 2016, 22:44:24.805 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Service [EventBus] initialized
+01 Mar 2016, 22:44:24.807 [  FINER] [    FXGL.AssetLoader] [JavaFX Application Thread] Service [AssetLoader] initialized
+01 Mar 2016, 22:44:24.809 [  FINER] [    FXGL.AssetLoader] [JavaFX Application Thread] Loading from disk: /assets/sounds/system/notification.wav
+01 Mar 2016, 22:44:24.837 [  FINER] [    FXGL.AssetLoader] [JavaFX Application Thread] Loading from disk: /assets/sounds/menu/select.wav
+01 Mar 2016, 22:44:24.839 [  FINER] [    FXGL.AssetLoader] [JavaFX Application Thread] Loading from disk: /assets/sounds/menu/back.wav
+01 Mar 2016, 22:44:24.842 [  FINER] [    FXGL.AssetLoader] [JavaFX Application Thread] Loading from disk: /assets/sounds/menu/press.wav
+01 Mar 2016, 22:44:24.845 [  FINER] [    FXGL.AssetLoader] [JavaFX Application Thread] Loading from disk: /assets/ui/fonts/Copperplate_Gothic_Light_Regular.ttf
+01 Mar 2016, 22:44:24.913 [  FINER] [    FXGL.AssetLoader] [JavaFX Application Thread] Loading from disk: /assets/ui/css/fxgl.css
+01 Mar 2016, 22:44:24.913 [  FINER] [    FXGL.AssetLoader] [JavaFX Application Thread] Loading from disk: /assets/ui/icons/fxgl_icon.png
+01 Mar 2016, 22:44:24.953 [  FINER] [    FXGL.AssetLoader] [JavaFX Application Thread] Loading from disk: /assets/ui/css/fxgl_dark.css
+01 Mar 2016, 22:44:25.019 [  FINER] [        FXGL.Display] [JavaFX Application Thread] Target size: 480.0x800.0@1.0
+01 Mar 2016, 22:44:25.020 [  FINER] [        FXGL.Display] [JavaFX Application Thread] New size:    480.0x800.0@1.0
+01 Mar 2016, 22:44:25.021 [  FINER] [        FXGL.Display] [JavaFX Application Thread] Service [Display] initialized
+01 Mar 2016, 22:44:25.021 [  FINER] [        FXGL.Display] [JavaFX Application Thread] Using CSS: CSS[jar:file:/C:/Users/Anwar%20Saleeby/.m2/repository/com/github/AlmasB/FXGL/0.2.1-0.2.0-gba5970d-32/FXGL-0.2.1-0.2.0-gba5970d-32.jar!/assets/ui/css/fxgl_dark.css]
+01 Mar 2016, 22:44:25.024 [  FINER] [          FXGL.Input] [JavaFX Application Thread] Service [Input] initialized
+01 Mar 2016, 22:44:25.026 [  FINER] [    FXGL.AudioPlayer] [JavaFX Application Thread] Service [AudioPlayer] initialized
+01 Mar 2016, 22:44:25.034 [  FINER] [    FXGL.MasterTimer] [JavaFX Application Thread] Service [MasterTimer] initialized
+01 Mar 2016, 22:44:25.047 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Game scene initialized
+01 Mar 2016, 22:44:25.048 [  FINER] [FXGL.NotificationSer] [JavaFX Application Thread] Service [NotificationService] initialized
+01 Mar 2016, 22:44:25.261 [  FINER] [      FXGL.GameWorld] [JavaFX Application Thread] Game world initialized
+01 Mar 2016, 22:44:25.347 [  FINER] [   FXGL.PhysicsWorld] [JavaFX Application Thread] Physics world initialized
+01 Mar 2016, 22:44:25.366 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Game_start()
+01 Mar 2016, 22:44:25.370 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Saving data to profile
+01 Mar 2016, 22:44:25.371 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] Logging bundle: game
+01 Mar 2016, 22:44:25.372 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] game.playtime=1132647771
+01 Mar 2016, 22:44:25.372 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: SaveEvent
+01 Mar 2016, 22:44:25.373 [  FINER] [        FXGL.Display] [JavaFX Application Thread] Saving data to profile
+01 Mar 2016, 22:44:25.373 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] Logging bundle: scene
+01 Mar 2016, 22:44:25.373 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] scene.sizeW=480.0
+01 Mar 2016, 22:44:25.374 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] scene.sizeH=800.0
+01 Mar 2016, 22:44:25.374 [  FINER] [          FXGL.Input] [JavaFX Application Thread] Saving data to profile
+01 Mar 2016, 22:44:25.374 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] Logging bundle: input
+01 Mar 2016, 22:44:25.374 [  FINER] [    FXGL.AudioPlayer] [JavaFX Application Thread] Saving data to profile
+01 Mar 2016, 22:44:25.374 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] Logging bundle: audio
+01 Mar 2016, 22:44:25.374 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] audio.musicVolume=0.5
+01 Mar 2016, 22:44:25.375 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] audio.soundVolume=0.5
+01 Mar 2016, 22:44:25.375 [  FINER] [FXGL.AchievementMana] [JavaFX Application Thread] Saving data to profile
+01 Mar 2016, 22:44:25.375 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] Logging bundle: achievement
+01 Mar 2016, 22:44:25.376 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Starting new game
+01 Mar 2016, 22:44:25.377 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Initializing App
+01 Mar 2016, 22:44:25.377 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Pausing main loop
+01 Mar 2016, 22:44:25.377 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: FXGLEvent[type=PAUSE]
+01 Mar 2016, 22:44:25.378 [  FINER] [          FXGL.Input] [JavaFX Application Thread] Clearing active input actions
+01 Mar 2016, 22:44:25.378 [  FINER] [    FXGL.MasterTimer] [JavaFX Application Thread] Stopping master timer
+01 Mar 2016, 22:44:25.378 [  FINER] [    FXGL.Application] [JavaFX Application Thread] State: STARTUP -> PAUSED
+01 Mar 2016, 22:44:25.378 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Resetting FXGL application
+01 Mar 2016, 22:44:25.378 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: FXGLEvent[type=RESET]
+01 Mar 2016, 22:44:25.379 [  FINER] [          FXGL.Input] [JavaFX Application Thread] Clearing active input actions
+01 Mar 2016, 22:44:25.379 [  FINER] [    FXGL.MasterTimer] [JavaFX Application Thread] Resetting ticks to 0
+01 Mar 2016, 22:44:25.379 [  FINER] [    FXGL.MasterTimer] [JavaFX Application Thread] Clearing all scheduled actions
+01 Mar 2016, 22:44:25.379 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Resetting game scene
+01 Mar 2016, 22:44:25.379 [  FINER] [      FXGL.GameWorld] [JavaFX Application Thread] Resetting game world
+01 Mar 2016, 22:44:25.381 [  FINER] [    FXGL.Application] [JavaFX Application Thread] State: PAUSED -> LOADING
+01 Mar 2016, 22:44:25.412 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Starting FXGL Init Thread
+01 Mar 2016, 22:44:25.414 [  FINER] [    FXGL.Application] [FXGL Init Thread] Initializing Assets
+01 Mar 2016, 22:44:25.414 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from disk: /assets/textures/spaceship.png
+01 Mar 2016, 22:44:25.421 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from disk: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.424 [  FINER] [    FXGL.Application] [FXGL Init Thread] Initializing Game
+01 Mar 2016, 22:44:25.443 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.444 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.445 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.445 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.446 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.447 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.447 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.448 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.448 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.449 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.450 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.450 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.451 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.452 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.453 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.453 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.454 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.455 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.456 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.459 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.460 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.461 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.461 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.462 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.462 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.463 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.463 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.464 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.464 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.465 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.465 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.466 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.467 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.467 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.468 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.468 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.469 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.469 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.470 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.470 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.471 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.471 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.471 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.472 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.472 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.473 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.473 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.474 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.474 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.475 [  FINER] [    FXGL.AssetLoader] [FXGL Init Thread] Loading from cache: /assets/textures/enemy.png
+01 Mar 2016, 22:44:25.475 [  FINER] [    FXGL.Application] [FXGL Init Thread] Initializing Physics
+01 Mar 2016, 22:44:25.476 [  FINER] [    FXGL.Application] [FXGL Init Thread] Initializing UI
+01 Mar 2016, 22:44:25.480 [  FINER] [    FXGL.Application] [FXGL Init Thread] Initialization Complete
+01 Mar 2016, 22:44:25.618 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Showing stage
+01 Mar 2016, 22:44:25.618 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Root size: 480.0x800.0
+01 Mar 2016, 22:44:25.618 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Scene size: 480.0x800.0
+01 Mar 2016, 22:44:25.618 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Stage size: 486.0x829.0
+01 Mar 2016, 22:44:25.631 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: FXGLEvent[type=INIT_APP_COMPLETE]
+01 Mar 2016, 22:44:25.631 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Resuming main loop
+01 Mar 2016, 22:44:25.632 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: FXGLEvent[type=RESUME]
+01 Mar 2016, 22:44:25.632 [  FINER] [          FXGL.Input] [JavaFX Application Thread] Clearing active input actions
+01 Mar 2016, 22:44:25.632 [  FINER] [    FXGL.MasterTimer] [JavaFX Application Thread] Starting master timer
+01 Mar 2016, 22:44:25.632 [  FINER] [    FXGL.Application] [JavaFX Application Thread] State: LOADING -> PLAYING
+01 Mar 2016, 22:44:25.642 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.642 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.642 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.644 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Creating render group for layer: TOP(2147483647)
+01 Mar 2016, 22:44:25.648 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.648 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.648 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.649 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.649 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.649 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.650 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.650 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.650 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.650 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.651 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.651 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.651 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.651 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.651 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.652 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.653 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.653 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.653 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.653 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.653 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.654 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.654 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.654 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.655 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.655 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.655 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.655 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.655 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.655 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.656 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.656 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.656 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.657 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.657 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.657 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.658 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.658 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.658 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.659 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.659 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.659 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.660 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.660 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.660 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.661 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.661 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.661 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.662 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.662 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.662 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.663 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.663 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.663 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.663 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.664 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.664 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.664 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.664 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.664 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.665 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.665 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.665 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.666 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.666 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.666 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.666 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.666 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.666 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.667 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.667 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.667 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.667 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.667 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.667 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.668 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.668 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.668 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.668 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.669 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.669 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.669 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.669 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.669 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.670 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.670 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.670 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.671 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.671 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.671 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.671 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.671 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.671 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.672 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.672 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.672 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.672 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.672 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.673 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.673 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.673 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.673 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.674 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.674 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.674 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.675 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.675 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.675 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.675 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.675 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.675 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.676 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.676 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.676 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.676 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.677 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.677 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.677 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.678 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.678 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.679 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.679 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.679 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.680 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.680 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.680 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.680 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.680 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.681 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.681 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.681 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.681 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.682 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.682 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.682 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.682 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.682 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.683 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.683 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.683 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.683 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.684 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.684 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.684 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.684 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.685 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.685 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.685 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.685 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.685 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent
+01 Mar 2016, 22:44:25.686 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: WorldEvent[type=ENTITY_ADDED]
+01 Mar 2016, 22:44:25.686 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Entity added to scene
+01 Mar 2016, 22:44:25.686 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Added MainViewComponent

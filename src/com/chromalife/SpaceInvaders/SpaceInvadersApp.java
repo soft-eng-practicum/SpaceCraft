@@ -15,6 +15,7 @@ public class SpaceInvadersApp extends GameApplication
 	@Override
 	protected void initSettings(GameSettings settings)
 	{
+		settings.setMenuEnabled(true);
 		settings.setWidth(480);
 		settings.setHeight(800);
 		settings.setIntroEnabled(false);
@@ -28,8 +29,8 @@ public class SpaceInvadersApp extends GameApplication
 	@Override
 	protected void initAssets()
 	{
-		spaceshipTexture = getAssetLoader().loadTexture("spaceship.png");
-		enemyTexture = getAssetLoader().loadTexture("enemy.png");
+		spaceshipTexture = getAssetLoader().loadTexture("spaceshipReduced.png");
+		enemyTexture = getAssetLoader().loadTexture("enemyReduced.png");
 		
 	}
 
