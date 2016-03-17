@@ -143,8 +143,7 @@ public final class EntityCreator
 
 		enemy.getMainViewComponent().setView(new EntityView(texture), true);
 		enemy.addComponent(new CollidableComponent(true));
-		//enemy.addComponent(new HPComponent(2));
-		//enemy.addControl(new EnemyControl());
+		
 
 		return enemy;
 	}
