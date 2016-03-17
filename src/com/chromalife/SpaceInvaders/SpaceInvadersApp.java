@@ -1,5 +1,6 @@
 package com.chromalife.SpaceInvaders;
 
+import com.almasb.ents.Entity;
 import com.almasb.fxgl.app.GameApplication;
 import com.almasb.fxgl.asset.Texture;
 import com.almasb.fxgl.entity.EntityView;
@@ -12,6 +13,7 @@ import javafx.scene.input.KeyCode;
 
 public class SpaceInvadersApp extends GameApplication
 {
+
 	
 	
 	@Override
@@ -58,7 +60,7 @@ public class SpaceInvadersApp extends GameApplication
 		{
 			for(int x = 0; x <10; x++)
 			{
-				initEnemies(x * 40 + 10, y * 40 + 10);
+				spawnEnemies(x * 40 + 10, y * 40 + 10);
 			}
 		}
 
@@ -98,16 +100,11 @@ public class SpaceInvadersApp extends GameApplication
 		
 	}
 	
-	private void initEnemies(double x, double y)
+	private void spawnEnemies(double x, double y)
 	{
+		Entity enemy = EntityCreator.newEnemy(x, y);
 		
-		
-		
-		Texture enemyTexture = getAssetLoader().loadTexture("enemy.png");
-		enemyTexture.setFitWidth(40);
-		enemyTexture.setFitHeight(40);
-		
-		
+		getGameWorld().addEntity(enemy);
 	}
 	
 	public static void main(String [] args)

@@ -127,8 +127,8 @@ public final class EntityCreator
 		player.getMainViewComponent().setView(new EntityView(texture), true);
 
 		player.addComponent(new CollidableComponent(true));
-		player.addComponent(new InvincibleComponent());
-		player.addControl(new PlayerControl());
+		//player.addComponent(new InvincibleComponent());
+		//player.addControl(new PlayerControl());
 
 		return player;
 	}
@@ -138,13 +138,13 @@ public final class EntityCreator
 		enemy.getTypeComponent().setValue(EntityType.ENEMY);
 		enemy.getPositionComponent().setValue(x, y);
 
-		Texture texture = assetLoader.loadTexture("enemy" + ((int)(Math.random() * 3) + 1) + ".png")
+		Texture texture = assetLoader.loadTexture("enemyReduced" + ((int)(Math.random() * 3) + 1) + ".png")
 				.toStaticAnimatedTexture(2, Duration.seconds(2));
 
 		enemy.getMainViewComponent().setView(new EntityView(texture), true);
 		enemy.addComponent(new CollidableComponent(true));
-		enemy.addComponent(new HPComponent(2));
-		enemy.addControl(new EnemyControl());
+		//enemy.addComponent(new HPComponent(2));
+		//enemy.addControl(new EnemyControl());
 
 		return enemy;
 	}
@@ -162,7 +162,7 @@ public final class EntityCreator
 		bullet.addComponent(new CollidableComponent(true));
 		bullet.getMainViewComponent().setView(new EntityView(assetLoader.loadTexture("tank_bullet.png")), true);
 		bullet.addControl(new ProjectileControl(new Point2D(0, Entities.getType(owner).isType(EntityType.PLAYER) ? -1 : 1), 10));
-		bullet.addComponent(new OwnerComponent(Entities.getType(owner).getValue()));
+		//bullet.addComponent(new OwnerComponent(Entities.getType(owner).getValue()));
 		bullet.addControl(new OffscreenCleanControl());
 
 		return bullet;
@@ -180,9 +180,9 @@ public final class EntityCreator
 
 		bullet.getBoundingBoxComponent().addHitBox(new HitBox("HIT", new BoundingBox(0, 0, 9, 20)));
 		bullet.addComponent(new CollidableComponent(true));
-		bullet.addComponent(new OwnerComponent(Entities.getType(owner).getValue()));
+		//bullet.addComponent(new OwnerComponent(Entities.getType(owner).getValue()));
 		bullet.addControl(new OffscreenCleanControl());
-		bullet.addControl(new BulletControl(500));
+		//bullet.addControl(new BulletControl(500));
 
 		DropShadow shadow = new DropShadow(22, Color.DARKBLUE);
 		shadow.setInput(new Glow(0.8));
@@ -207,7 +207,7 @@ public final class EntityCreator
 		wall.getPositionComponent().setValue(x, y);
 		wall.getMainViewComponent().setView(new EntityView(assetLoader.loadTexture("wall.png")), true);
 		wall.addComponent(new CollidableComponent(true));
-		wall.addComponent(new HPComponent(7));
+		//wall.addComponent(new HPComponent(7));
 
 		return wall;
 	}
@@ -218,9 +218,9 @@ public final class EntityCreator
 		bonus.getPositionComponent().setValue(x, y);
 		bonus.getMainViewComponent().setView(new EntityView(assetLoader.loadTexture("life.png")), true);
 
-		bonus.addComponent(new SubTypeComponent(type));
+		//bonus.addComponent(new SubTypeComponent(type));
 		bonus.addComponent(new CollidableComponent(true));
-		bonus.addControl(new BonusControl());
+		//bonus.addControl(new BonusControl());
 
 		return bonus;
 	}
@@ -234,7 +234,7 @@ public final class EntityCreator
 		animation.setFitHeight(80);
 
 		explosion.getMainViewComponent().setGraphics(animation);
-		explosion.addControl(new ExpireCleanControl(Duration.seconds(1.8)));
+		//explosion.addControl(new ExpireCleanControl(Duration.seconds(1.8)));
 
 		return explosion;
 	}
@@ -248,7 +248,7 @@ public final class EntityCreator
 		hit.setFitHeight(15);
 
 		laserHit.getMainViewComponent().setGraphics(hit);
-		laserHit.addControl(new LaserHitControl());
+		//laserHit.addControl(new LaserHitControl());
 
 		return laserHit;
 	}
