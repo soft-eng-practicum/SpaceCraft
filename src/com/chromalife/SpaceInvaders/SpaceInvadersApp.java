@@ -9,11 +9,20 @@ import com.almasb.fxgl.input.*;
 import com.almasb.fxgl.input.InputMapping;
 import com.almasb.fxgl.physics.PhysicsWorld;
 import com.almasb.fxgl.settings.GameSettings;
+
+import javafx.beans.property.IntegerProperty;
+import javafx.scene.Parent;
 import javafx.scene.input.KeyCode;
 
 public class SpaceInvadersApp extends GameApplication
 {
-
+	
+	//private GameEntity player;
+	//private PlayerControl playerControl;
+	
+	//private IntegerProperty lives;
+	
+	//private GameController uiController;
 	
 	
 	@Override
@@ -38,14 +47,14 @@ public class SpaceInvadersApp extends GameApplication
 	protected void initAssets()
 	{
 		spaceshipTexture = getAssetLoader().loadTexture("spaceshipReduced.png");
-		enemyTexture = getAssetLoader().loadTexture("enemyReduced.png");
+		
 		
 	}
 
 	@Override
 	protected void initGame()
 	{
-		GameEntity enemy = new GameEntity();
+		/*GameEntity enemy = new GameEntity();
 		enemy.getMainViewComponent().setView(new EntityView(enemyTexture));
 		
 		getGameWorld().addEntity(enemy);
@@ -55,7 +64,7 @@ public class SpaceInvadersApp extends GameApplication
 		spaceship.getMainViewComponent().setView(new EntityView(spaceshipTexture));
 
 		getGameWorld().addEntity(spaceship);
-		
+		*/
 		for(int y = 0; y < 5; y++)
 		{
 			for(int x = 0; x <10; x++)
@@ -89,7 +98,9 @@ public class SpaceInvadersApp extends GameApplication
 	@Override
 	protected void initUI()
 	{
-		// TODO Auto-generated method stub
+		//uiController = new GameController(getGameScene());
+		
+		
 		
 	}
 
@@ -103,6 +114,7 @@ public class SpaceInvadersApp extends GameApplication
 	private void spawnEnemies(double x, double y)
 	{
 		Entity enemy = EntityCreator.newEnemy(x, y);
+		
 		
 		getGameWorld().addEntity(enemy);
 	}
