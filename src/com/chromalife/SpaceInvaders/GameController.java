@@ -7,9 +7,11 @@ import com.almasb.fxgl.app.GameApplication;
 import com.almasb.fxgl.app.ServiceType;
 import com.almasb.fxgl.asset.Texture;
 import com.almasb.fxgl.scene.GameScene;
+import com.almasb.fxgl.scene.Viewport;
 import com.almasb.fxgl.ui.UIController;
 import com.almasb.fxgl.ui.UIFactory;
 
+import javafx.animation.Animation;
 import javafx.fxml.*;
 import javafx.scene.control.Label;
 
@@ -67,6 +69,19 @@ public class GameController implements UIController
 		lives.add(texture);
 		gameScene.addUINode(texture);
 		
+	}
+	public void loseHP()
+	{
+		/*Texture t = lives.get(lives.size() - 1);
+		
+		Animation animation = getAnimationLoseHP(t);
+		animation.setOnFinished(e -> lives.remove(t));
+		animation.play();
+		
+		Viewport viewport = gameScene.getViewport();
+		
+		Node blink = new Rectangle(viewport.getWidth(), viewport.getHeight(), Color.rgb());
+		*/
 	}
 	
 
