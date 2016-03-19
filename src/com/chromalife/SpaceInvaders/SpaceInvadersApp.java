@@ -17,6 +17,7 @@ import javafx.scene.input.KeyCode;
 //config file
 
 import com.chromalife.SpaceInvaders.Config;
+import com.chromalife.SpaceInvadersControls.PlayerControler;
 
 public class SpaceInvadersApp extends GameApplication
 {

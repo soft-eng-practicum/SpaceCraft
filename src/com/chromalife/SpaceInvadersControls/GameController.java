@@ -1,4 +1,4 @@
-package com.chromalife.SpaceInvaders;
+package com.chromalife.SpaceInvadersControls;
 
 import java.util.ArrayList;
 import java.util.List;
