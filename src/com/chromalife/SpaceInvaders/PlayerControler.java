@@ -5,8 +5,6 @@ import com.almasb.ents.Entity;
 import com.almasb.fxgl.entity.component.BoundingBoxComponent;
 import com.almasb.fxgl.entity.component.PositionComponent;
 
-import com.chromalife.SpaceInvaders.Config.*;
-
 
 public class PlayerControler extends AbstractControl {
 
@@ -16,8 +14,8 @@ public class PlayerControler extends AbstractControl {
 
 	
 	@Override
-	public void onUpdate(Entity entity, double arg1) {
-		// TODO Auto-generated method stub
+	public void onUpdate(Entity entity, double numb) {
+		dx = Config.PLAYER_MOVE_SPEED * numb;
 		
 	}
 	

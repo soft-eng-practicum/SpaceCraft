@@ -120,7 +120,7 @@ public final class EntityCreator
 		player.getTypeComponent().setValue(EntityType.PLAYER);
 		player.getPositionComponent().setValue(x, y);
 
-		Texture texture = assetLoader.loadTexture("player2.png");
+		Texture texture = assetLoader.loadTexture("spaceshipReduced.png");
 		texture.setPreserveRatio(true);
 		texture.setFitHeight(40);
 

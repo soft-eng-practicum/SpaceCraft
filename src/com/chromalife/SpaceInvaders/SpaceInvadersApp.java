@@ -49,6 +49,9 @@ public class SpaceInvadersApp extends GameApplication
 	
 	private Texture spaceshipTexture;
 	private Texture enemyTexture;
+	
+	private GameEntity player;
+	private PlayerControler playerControler;
 
 	@Override
 	protected void initAssets()
@@ -83,6 +86,9 @@ public class SpaceInvadersApp extends GameApplication
 				spawnEnemies(x * 40 + 10, y * 40 + 10);
 			}
 		}
+		
+		//spawn player
+		spawnPlayer();
 
 	}
 
@@ -93,10 +99,20 @@ public class SpaceInvadersApp extends GameApplication
 		
 		input.addInputMapping(new InputMapping("Move Left", KeyCode.A));
 		input.addInputMapping(new InputMapping("Move Right", KeyCode.D));
-        input.addInputMapping(new InputMapping("Shoot", KeyCode.F));
+        input.addInputMapping(new InputMapping("Shoot", KeyCode.SPACE));
 		
 	}
-
+	
+	@OnUserAction(name = "Move Left", type = ActionType.ON_ACTION)
+	public void moveLeft() {
+		playerControler.left();
+	}
+	
+	@OnUserAction(name = "Move Right", type = ActionType.ON_ACTION)
+	public void moveRight() {
+		playerControler.right();
+	}
+	
 
 	@Override
 	protected void initPhysics()
@@ -119,8 +135,9 @@ public class SpaceInvadersApp extends GameApplication
 	@Override
 	protected void onUpdate()
 	{
-		// TODO Auto-generated method stub
 		
+		//getDisplay().showMessageBox("Welcome to SpaceInvaders!");
+		//close message box... somehow..
 	}
 	
 	private void spawnEnemies(double x, double y)
@@ -129,6 +146,14 @@ public class SpaceInvadersApp extends GameApplication
 		
 		
 		getGameWorld().addEntity(enemy);
+	}
+	
+	private void spawnPlayer() {
+		//Create player
+		player = EntityCreator.newPlayer(getWidth() / 2 - 20, getHeight() - 40);
+		playerControler = player.getControlUnsafe(PlayerControler.class);
+		
+		getGameWorld().addEntity(player);
 	}
 	
 	public static void main(String [] args)
