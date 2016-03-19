@@ -14,6 +14,10 @@ import javafx.beans.property.IntegerProperty;
 import javafx.scene.Parent;
 import javafx.scene.input.KeyCode;
 
+//config file
+
+import com.chromalife.SpaceInvaders.Config.*;
+
 public class SpaceInvadersApp extends GameApplication
 {
 	
@@ -24,7 +28,9 @@ public class SpaceInvadersApp extends GameApplication
 	
 	//private GameController uiController;
 	
-	
+	/*
+	 * Starts 
+	 */
 	@Override
 	protected void initSettings(GameSettings settings)
 	{
@@ -32,10 +38,14 @@ public class SpaceInvadersApp extends GameApplication
 		settings.setMenuEnabled(true);
 
 		settings.setTitle("Space Invaders 0.1dev");
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/master
 		settings.setWidth(Config.WIDTH);
 		settings.setHeight(Config.HEIGHT);
 		settings.setIntroEnabled(false);
+		
 		settings.setMenuEnabled(false);
 		
 	}
@@ -65,6 +75,10 @@ public class SpaceInvadersApp extends GameApplication
 
 		getGameWorld().addEntity(spaceship);
 		*/
+		
+		/*
+		 * Creates the list of enemies
+		 */
 		for(int y = 0; y < 5; y++)
 		{
 			for(int x = 0; x <10; x++)
