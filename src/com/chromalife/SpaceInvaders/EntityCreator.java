@@ -70,12 +70,21 @@ public final class EntityCreator
 
 		return bg;
 	}
+	/**
+	 * 
+	 * @return
+	 */
 	public static Entity newMeteor() {
 		double w = FXGL.getDouble("settings.width");
 		double h = FXGL.getDouble("settings.height");
 		double x = 0, y = 0;
 
 		// these are deliberately arbitrary to create illusion of randomness
+		/* What does the value 50 effect?
+		 * 
+		 * 
+		 * 
+		 */
 		if (rand.nextBoolean()) {
 			// left or right
 			if (rand.nextBoolean()) {
@@ -122,7 +131,7 @@ public final class EntityCreator
 
 		Texture texture = assetLoader.loadTexture("spaceshipReduced.png");
 		texture.setPreserveRatio(true);
-		texture.setFitHeight(40);
+		texture.setFitHeight(Config.PLAYER_HEIGHT);
 
 		player.getMainViewComponent().setView(new EntityView(texture), true);
 
