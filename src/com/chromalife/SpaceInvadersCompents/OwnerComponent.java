@@ -7,5 +7,8 @@ import com.almasb.fxgl.entity.component.TypeComponent;
 
 public class OwnerComponent extends TypeComponent
 {
-	
+	public OwnerComponent(Object entity)
+	{
+		super(entity);
+	}
 }
