@@ -33,8 +33,8 @@ public class SpaceInvadersApp extends GameApplication
 
 		settings.setTitle("Space Invaders 0.1dev");
 
-		settings.setWidth(480);
-		settings.setHeight(800);
+		settings.setWidth(Config.WIDTH);
+		settings.setHeight(Config.HEIGHT);
 		settings.setIntroEnabled(false);
 		settings.setMenuEnabled(false);
 		
@@ -85,6 +85,7 @@ public class SpaceInvadersApp extends GameApplication
         input.addInputMapping(new InputMapping("Shoot", KeyCode.F));
 		
 	}
+
 
 	@Override
 	protected void initPhysics()

@@ -1,15 +1,18 @@
 package com.chromalife.SpaceInvaders;
 
-public class Config
+public final class Config
 {
+	public Config() {}
+	
+	
 	public class java
 	{
 
 	}
 
-	//Height Width of App
-	public static final int WIDTH = 400,
-							HEIGHT = 800;
+	//Height, Width of App
+	public static final int WIDTH = 480;
+	public static final int	HEIGHT = 800;
 	
 	
 	
