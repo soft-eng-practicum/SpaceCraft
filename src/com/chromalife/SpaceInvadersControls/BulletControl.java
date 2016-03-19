@@ -21,12 +21,12 @@ public class BulletControl<OwnerComponent> extends AbstractControl {
 
     @Override
     public void onAdded(Entity entity) {
-     //   owner = entity.getControlUnsafe(OwnerComponent.class);
+        owner = entity.getComponentUnsafe(OwnerComponent.class);
         position = entity.getComponentUnsafe(PositionComponent.class);
     }
 
     @Override
     public void onUpdate(Entity entity, double tpf) {
-        //position.translateY(owner.isType(EntityCreator.EntityType.PLAYER) ? -tpf * speed : tpf * speed);
+        position.translateY(owner.isType(EntityCreator.EntityType.PLAYER) ? -tpf * speed : tpf * speed);
     }
 }
