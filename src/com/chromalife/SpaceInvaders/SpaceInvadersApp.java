@@ -107,16 +107,19 @@ public class SpaceInvadersApp extends GameApplication
 	@OnUserAction(name = "Move Left", type = ActionType.ON_ACTION)
 	public void moveLeft() {
 		playerController.left();
+		System.out.println("Moved player to the left");
 	}
 	
 	@OnUserAction(name = "Move Right", type = ActionType.ON_ACTION)
 	public void moveRight() {
+		
 		playerController.right();
+		System.out.println("Moved Player to the right");
 	}
 	
 	@OnUserAction(name = "Shoot", type = ActionType.ON_ACTION)
 	public void shoot(){
-		
+		//implement shooting
 	}
 
 	@Override
