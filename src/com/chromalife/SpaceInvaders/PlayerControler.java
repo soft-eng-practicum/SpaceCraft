@@ -5,8 +5,8 @@ import com.almasb.ents.Entity;
 import com.almasb.fxgl.entity.component.BoundingBoxComponent;
 import com.almasb.fxgl.entity.component.PositionComponent;
 
-import jdk.nashorn.internal.runtime.regexp.joni.Config;
 import com.chromalife.SpaceInvaders.Config.*;
+
 
 public class PlayerControler extends AbstractControl {
 
@@ -22,16 +22,15 @@ public class PlayerControler extends AbstractControl {
 	}
 	
 	
-	 /*
-	 //Can't get Config.WIDTH recognized in this class (scope issue??)
+	 
 	public void left() {
         if (pos.getX() - dx >= 0)
             pos.translateX(-dx);
     }
 	
 	public void right() {
-        if (pos.getX() + boundBox.getWidth() + dx <= Config.WIDTH)
+        if (pos.getX() + boundBox.getWidth() + dx <= Config.HEIGHT )
             pos.translateX(dx);
     }
-	*/
+	
 }
