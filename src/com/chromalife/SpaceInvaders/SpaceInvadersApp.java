@@ -17,7 +17,7 @@ import javafx.scene.input.KeyCode;
 //config file
 
 import com.chromalife.SpaceInvaders.Config;
-import com.chromalife.SpaceInvadersControls.PlayerControler;
+import com.chromalife.SpaceInvadersControls.PlayerController;
 
 public class SpaceInvadersApp extends GameApplication
 {
@@ -52,7 +52,7 @@ public class SpaceInvadersApp extends GameApplication
 	private Texture enemyTexture;
 	
 	private GameEntity player;
-	private PlayerControler playerControler;
+	private PlayerController playerController;
 
 	@Override
 	protected void initAssets()
@@ -106,14 +106,18 @@ public class SpaceInvadersApp extends GameApplication
 	
 	@OnUserAction(name = "Move Left", type = ActionType.ON_ACTION)
 	public void moveLeft() {
-		playerControler.left();
+		playerController.left();
 	}
 	
 	@OnUserAction(name = "Move Right", type = ActionType.ON_ACTION)
 	public void moveRight() {
-		playerControler.right();
+		playerController.right();
 	}
 	
+	@OnUserAction(name = "Shoot", type = ActionType.ON_ACTION)
+	public void shoot(){
+		
+	}
 
 	@Override
 	protected void initPhysics()
@@ -152,7 +156,7 @@ public class SpaceInvadersApp extends GameApplication
 	private void spawnPlayer() {
 		//Create player
 		player = EntityCreator.newPlayer(getWidth() / 2 - 20, getHeight() - 40);
-		playerControler = player.getControlUnsafe(PlayerControler.class);
+		playerController = player.getControlUnsafe(PlayerController.class);
 		
 		getGameWorld().addEntity(player);
 	}
