@@ -22,7 +22,7 @@ public class PlayerControler extends AbstractControl {
 	}
 	
 	
-	 
+	
 	public void left() {
         if (pos.getX() - dx >= 0)
             pos.translateX(-dx);
