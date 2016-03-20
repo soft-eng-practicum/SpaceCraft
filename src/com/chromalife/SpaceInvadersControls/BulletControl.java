@@ -13,8 +13,9 @@ public class BulletControl extends AbstractControl {
 
 	private PositionComponent position;
     private OwnerComponent owner;
-
     private double speed;
+ 
+ 
 
     public BulletControl(double speed) {
         this.speed = speed;
