@@ -22,4 +22,5 @@ public class LaserHitControl extends AbstractControl {
             entity.removeFromWorld();
         }
     }
+    
 }
