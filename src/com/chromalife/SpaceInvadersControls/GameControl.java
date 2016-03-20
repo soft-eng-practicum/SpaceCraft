@@ -16,7 +16,7 @@ import javafx.fxml.*;
 import javafx.scene.control.Label;
 
 
-public class GameController implements UIController
+public class GameControl implements UIController
 {
 	@FXML
 	private Label scoreLabel;
@@ -34,7 +34,7 @@ public class GameController implements UIController
 	
 	private GameScene gameScene;
 	
-	public GameController(GameScene gameScene)
+	public GameControl(GameScene gameScene)
 	{
 		this.gameScene = gameScene;
 	}

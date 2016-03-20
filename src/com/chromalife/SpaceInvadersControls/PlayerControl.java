@@ -7,7 +7,7 @@ import com.almasb.fxgl.entity.component.PositionComponent;
 import com.chromalife.SpaceInvaders.Config;
 
 
-public class PlayerController extends AbstractControl {
+public class PlayerControl extends AbstractControl {
 
 	private PositionComponent pos;
 	private BoundingBoxComponent boundBox;
