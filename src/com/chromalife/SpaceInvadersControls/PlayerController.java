@@ -21,15 +21,28 @@ public class PlayerController extends AbstractControl {
 	}
 	
 	
-	
+	//shift player left	
 	public void left() {
-        if (pos.getX() - dx >= 0)
+       try
+		{
+			 if (pos.getX() - dx >= 0)
             pos.translateX(-dx);
+		} catch (Exception e)
+		{
+			e.printStackTrace();
+		}
     }
 	
+	//shift player right
 	public void right() {
-        if (pos.getX() + boundBox.getWidth() + dx <= Config.WIDTH )
+       try
+		{
+			 if (pos.getX() + boundBox.getWidth() + dx <= Config.WIDTH )
             pos.translateX(dx);
+		} catch (Exception e)
+		{
+			e.printStackTrace();
+		}
     }
 	
 }

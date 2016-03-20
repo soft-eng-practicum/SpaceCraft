@@ -7,6 +7,7 @@ import com.almasb.fxgl.entity.component.BoundingBoxComponent;
 import com.almasb.fxgl.entity.component.PositionComponent;
 import com.chromalife.SpaceInvaders.Config;
 import com.chromalife.SpaceInvaders.EntityCreator;
+import com.chromalife.SpaceInvadersComponents.*;
 
 public class BulletControl<OwnerComponent> extends AbstractControl {
 

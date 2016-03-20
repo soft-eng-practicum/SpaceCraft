@@ -1,4 +1,4 @@
-package com.chromalife.SpaceInvadersCompents;
+package com.chromalife.SpaceInvadersComponents;
 
 import com.almasb.ents.Entity;
 import com.almasb.ents.component.ObjectComponent;
