@@ -1,4 +1,4 @@
-package com.chromalife.SpaceInvadersEvent;
+package SpaceInvaders.Event;
 
 /**
  * Class: 

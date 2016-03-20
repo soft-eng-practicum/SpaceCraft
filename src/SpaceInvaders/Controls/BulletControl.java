@@ -1,13 +1,14 @@
-package com.chromalife.SpaceInvadersControls;
+package SpaceInvaders.Controls;
 
 import com.almasb.ents.AbstractControl;
 import com.almasb.ents.Entity;
 import com.almasb.ents.component.ObjectComponent;
 import com.almasb.fxgl.entity.component.BoundingBoxComponent;
 import com.almasb.fxgl.entity.component.PositionComponent;
-import com.chromalife.SpaceInvaders.Config;
-import com.chromalife.SpaceInvaders.EntityCreator;
-import com.chromalife.SpaceInvadersComponents.*;
+
+import SpaceInvaders.Config;
+import SpaceInvaders.EntityCreator;
+import SpaceInvaders.Components.*;
 
 public class BulletControl extends AbstractControl {
 

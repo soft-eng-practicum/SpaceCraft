@@ -1,10 +1,11 @@
-package com.chromalife.SpaceInvadersControls;
+package SpaceInvaders.Controls;
 
 import com.almasb.ents.AbstractControl;
 import com.almasb.ents.Entity;
 import com.almasb.fxgl.entity.component.BoundingBoxComponent;
 import com.almasb.fxgl.entity.component.PositionComponent;
-import com.chromalife.SpaceInvaders.Config;
+
+import SpaceInvaders.Config;
 
 
 public class PlayerControl extends AbstractControl {

@@ -1,4 +1,4 @@
-package com.chromalife.SpaceInvaders;
+package SpaceInvaders;
 
 public final class Config
 {

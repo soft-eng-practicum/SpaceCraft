@@ -1,4 +1,4 @@
-package com.chromalife.SpaceInvaders;
+package SpaceInvaders;
 
 import java.util.Random;
 
@@ -15,8 +15,8 @@ import com.almasb.fxgl.entity.component.CollidableComponent;
 import com.almasb.fxgl.entity.control.OffscreenCleanControl;
 import com.almasb.fxgl.entity.control.ProjectileControl;
 import com.almasb.fxgl.physics.HitBox;
-import com.chromalife.SpaceInvadersControls.MeteorControl;
 
+import SpaceInvaders.Controls.MeteorControl;
 import javafx.geometry.BoundingBox;
 import javafx.geometry.Point2D;
 import javafx.scene.effect.DropShadow;

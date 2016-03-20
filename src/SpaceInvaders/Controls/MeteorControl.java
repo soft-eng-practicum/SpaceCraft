@@ -1,4 +1,4 @@
-package com.chromalife.SpaceInvadersControls;
+package SpaceInvaders.Controls;
 
 import com.almasb.ents.AbstractControl;
 import com.almasb.ents.Entity;

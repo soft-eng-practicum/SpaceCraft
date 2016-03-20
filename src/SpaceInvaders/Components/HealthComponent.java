@@ -1,4 +1,4 @@
-package com.chromalife.SpaceInvadersComponents;
+package SpaceInvaders.Components;
 
 import com.almasb.ents.component.IntegerComponent;
 

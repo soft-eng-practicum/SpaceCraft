@@ -1,4 +1,4 @@
-package com.chromalife.SpaceInvaders;
+package SpaceInvaders;
 
 import com.almasb.ents.Entity;
 import com.almasb.fxgl.app.GameApplication;
@@ -13,19 +13,19 @@ import com.almasb.fxgl.settings.GameSettings;
 import javafx.beans.property.IntegerProperty;
 import javafx.scene.Parent;
 import javafx.scene.input.KeyCode;
-
-//config file
-
-import com.chromalife.SpaceInvaders.Config;
-import com.chromalife.SpaceInvadersControls.PlayerControl;
+import SpaceInvaders.Config;
+import SpaceInvaders.Controls.PlayerControl;
 
 public class SpaceInvadersApp extends GameApplication
 {
 	
-	//private GameEntity player;
-	//private PlayerControl playerControl;
+	private GameEntity player;
+	private PlayerControl playerControl;
 	
-	//private IntegerProperty lives;
+	private Texture spaceshipTexture;
+	private Texture enemyTexture;
+	
+	private IntegerProperty lives;
 	
 	//private GameController uiController;
 	
@@ -48,11 +48,7 @@ public class SpaceInvadersApp extends GameApplication
 		
 	}
 	
-	private Texture spaceshipTexture;
-	private Texture enemyTexture;
-	
-	private GameEntity player;
-	private PlayerControl playerControl;
+
 
 	@Override
 	protected void initAssets()

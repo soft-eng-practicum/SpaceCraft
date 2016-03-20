@@ -1,14 +1,6 @@
-package com.chromalife.SpaceInvadersEvent;
+package SpaceInvaders.Event;
 
-/**
- * Class: 
- * 
- * @author Xavier Lazo
- * @version 1.0 
- *
- */
-
-import com.chromalife.SpaceInvaders.EntityCreator;
+import SpaceInvaders.EntityCreator;
 import javafx.beans.NamedArg;
 import javafx.event.Event;
 import javafx.event.EventType;
@@ -27,7 +19,7 @@ public class BonusPickupEvent extends GameEvent
         this.type = type;
     }
 
-    public com.chromalife.SpaceInvaders.EntityCreator.BonusType getType() {
+    public SpaceInvaders.EntityCreator.BonusType getType() {
         return type;
     }
 
