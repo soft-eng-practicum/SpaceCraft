@@ -9,7 +9,7 @@ import com.chromalife.SpaceInvaders.Config;
 import com.chromalife.SpaceInvaders.EntityCreator;
 import com.chromalife.SpaceInvadersComponents.*;
 
-public class BulletControl<OwnerComponent> extends AbstractControl {
+public class BulletControl extends AbstractControl {
 
 	private PositionComponent position;
     private OwnerComponent owner;
