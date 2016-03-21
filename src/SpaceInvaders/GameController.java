@@ -23,7 +23,7 @@ import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
 
 
-public class GameControl implements UIController
+public class GameController implements UIController
 {
 	@FXML
 	private Label scoreLabel;
@@ -41,7 +41,7 @@ public class GameControl implements UIController
 	
 	private GameScene gameScene;
 	
-	public GameControl(GameScene gameScene)
+	public GameController(GameScene gameScene)
 	{
 		this.gameScene = gameScene;
 	}
