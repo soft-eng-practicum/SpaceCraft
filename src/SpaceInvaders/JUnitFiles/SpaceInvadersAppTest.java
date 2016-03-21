@@ -1,4 +1,4 @@
-package SpaceInvaders;
+package SpaceInvaders.JUnitFiles;
 
 import static org.junit.Assert.*;
 
