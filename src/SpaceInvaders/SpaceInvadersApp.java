@@ -116,6 +116,7 @@ public class SpaceInvadersApp extends GameApplication
 	@OnUserAction(name = "Shoot", type = ActionType.ON_ACTION)
 	public void shoot(){
 		//implement shooting
+		System.out.println("Shot Fired.");
 	}
 
 	@Override
