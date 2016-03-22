@@ -1,4 +1,6 @@
-package SpaceInvaders.Event;
+package SpaceInvaders.JUnitFiles;
+
+//Xavier lazo
 
 import static org.junit.Assert.*;
 
