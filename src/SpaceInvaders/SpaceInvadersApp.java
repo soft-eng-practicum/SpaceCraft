@@ -41,7 +41,7 @@ public class SpaceInvadersApp extends GameApplication
 
 		settings.setTitle("Space Invaders 0.1dev");
 
-		settings.setWidth(Config.WIDTH);
+ 		settings.setWidth(Config.WIDTH);
 		settings.setHeight(Config.HEIGHT);
 		settings.setIntroEnabled(false);
 		
