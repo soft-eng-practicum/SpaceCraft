@@ -17,6 +17,7 @@ import com.almasb.fxgl.entity.control.ProjectileControl;
 import com.almasb.fxgl.physics.HitBox;
 
 import SpaceInvaders.Controls.MeteorControl;
+import SpaceInvaders.Controls.PlayerControl;
 import javafx.geometry.BoundingBox;
 import javafx.geometry.Point2D;
 import javafx.scene.effect.DropShadow;
@@ -137,7 +138,7 @@ public final class EntityCreator
 
 		player.addComponent(new CollidableComponent(true));
 		//player.addComponent(new InvincibleComponent());
-		//player.addControl(new PlayerControl());
+		player.addControl(new PlayerControl());
 
 		return player;
 	}

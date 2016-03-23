@@ -14,6 +14,7 @@ import javafx.beans.property.IntegerProperty;
 import javafx.scene.Parent;
 import javafx.scene.input.KeyCode;
 import SpaceInvaders.Config;
+import SpaceInvaders.Collision.BulletPlayerHandler;
 import SpaceInvaders.Controls.PlayerControl;
 
 public class SpaceInvadersApp extends GameApplication
@@ -40,7 +41,7 @@ public class SpaceInvadersApp extends GameApplication
 
 		settings.setTitle("Space Invaders 0.1dev");
 
-		settings.setWidth(Config.WIDTH);
+ 		settings.setWidth(Config.WIDTH);
 		settings.setHeight(Config.HEIGHT);
 		settings.setIntroEnabled(false);
 		
@@ -53,7 +54,7 @@ public class SpaceInvadersApp extends GameApplication
 	@Override
 	protected void initAssets()
 	{
-		spaceshipTexture = getAssetLoader().loadTexture("spaceshipReduced.png");
+		getAssetLoader().cache();
 		
 		
 	}
@@ -61,33 +62,17 @@ public class SpaceInvadersApp extends GameApplication
 	@Override
 	protected void initGame()
 	{
-		/*GameEntity enemy = new GameEntity();
-		enemy.getMainViewComponent().setView(new EntityView(enemyTexture));
-		
-		getGameWorld().addEntity(enemy);
-		
-		GameEntity spaceship = new GameEntity();
-		spaceship.getPositionComponent().setValue(220,600);
-		spaceship.getMainViewComponent().setView(new EntityView(spaceshipTexture));
-
-		getGameWorld().addEntity(spaceship);
-		*/
-		
-		/*
-		 * Creates the list of enemies
+		 /*initGame(highScore == 0
+	                ? new SaveData("CPU", ACHIEVEMENT_MASTER_SCORER)
+	                : new SaveData(highScoreName, highScore));
 		 */
-		for(int y = 0; y < 5; y++)
-		{
-			for(int x = 0; x <10; x++)
-			{
-				spawnEnemies(x * 40 + 10, y * 40 + 10);
-			}
-		}
-		
-		//spawn player
+		initInput();
+		initLevel();
 		spawnPlayer();
-
+		
+		
 	}
+	
 
 	@Override
 	protected void initInput()
@@ -122,8 +107,8 @@ public class SpaceInvadersApp extends GameApplication
 	@Override
 	protected void initPhysics()
 	{
-		//PhysicsWorld worldPhysics = getPhysicsWorld();
-		//worldPhysics.addCollisionHandler(new BulletPlayerHandler());
+		PhysicsWorld worldPhysics = getPhysicsWorld();
+		worldPhysics.addCollisionHandler(new BulletPlayerHandler());
 		
 		
 	}
@@ -141,8 +126,7 @@ public class SpaceInvadersApp extends GameApplication
 	protected void onUpdate()
 	{
 		
-		//getDisplay().showMessageBox("Welcome to SpaceInvaders!");
-		//close message box... somehow..
+		
 	}
 	
 	private void spawnEnemies(double x, double y)
@@ -153,6 +137,25 @@ public class SpaceInvadersApp extends GameApplication
 		getGameWorld().addEntity(enemy);
 	}
 	
+	 private void spawnWall(double x, double y) {
+	        getGameWorld().addEntity(EntityCreator.newWall(x, y));
+	    }
+	private void initLevel() {
+        for (int y = 0; y < 5; y++) {
+            for (int x = 0; x < 8; x++) {
+                spawnEnemies(x * (40 + 20), 100 + y * (40 + 20));
+            }
+        }
+
+        spawnWall(40, getHeight() - 100);
+        spawnWall(120, getHeight() - 100);
+
+        spawnWall(getWidth() - 160, getHeight() - 100);
+        spawnWall(getWidth() - 80, getHeight() - 100);
+
+        //getInput().setProcessInput(true);
+    }
+	
 	private void spawnPlayer() {
 		//Create player
 		player = EntityCreator.newPlayer(getWidth() / 2 - 20, getHeight() - 40);
@@ -160,6 +163,8 @@ public class SpaceInvadersApp extends GameApplication
 		
 		getGameWorld().addEntity(player);
 	}
+	
+	
 	
 	public static void main(String [] args)
 	{
