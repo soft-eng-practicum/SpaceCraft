@@ -84,7 +84,7 @@ public final class EntityCreator
 		// these are deliberately arbitrary to create illusion of randomness
 		/* What does the value 50 effect?
 		 * 
-		 * 
+		 * These are for a future feature that will spawn meteors in the background. -Anwar
 		 * 
 		 */
 		if (rand.nextBoolean()) {
