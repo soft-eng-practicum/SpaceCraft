@@ -63,7 +63,7 @@ public class EnemyControl extends AbstractControl {
 
         getEntity().getWorld().addEntity(bullet);
 
-        //audioPlayer.playSound("shoot" + (int)(Math.random() * 4 + 1) + ".wav");
+        audioPlayer.playSound("shoot" + (int)(Math.random() * 4 + 1) + ".wav");
     }
 }
 

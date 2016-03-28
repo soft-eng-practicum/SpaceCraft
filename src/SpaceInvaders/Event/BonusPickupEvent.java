@@ -23,5 +23,4 @@ public class BonusPickupEvent extends GameEvent
         return type;
     }
 
-   
 }

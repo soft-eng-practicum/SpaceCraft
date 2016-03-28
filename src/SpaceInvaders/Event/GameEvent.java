@@ -26,10 +26,4 @@ public class GameEvent extends Event {
 	public GameEvent(@NamedArg("eventType") EventType<? extends Event> eventType) {
 		super(eventType);
 	}
-	
-	//@test
-	public void testPlayerGotHit()
-	{
-		
-	}
 }
