@@ -16,6 +16,8 @@ import com.almasb.fxgl.entity.control.OffscreenCleanControl;
 import com.almasb.fxgl.entity.control.ProjectileControl;
 import com.almasb.fxgl.physics.HitBox;
 
+import SpaceInvaders.Components.OwnerComponent;
+import SpaceInvaders.Controls.BulletControl;
 import SpaceInvaders.Controls.MeteorControl;
 import SpaceInvaders.Controls.PlayerControl;
 import javafx.geometry.BoundingBox;
@@ -189,9 +191,9 @@ public final class EntityCreator
 
 		bullet.getBoundingBoxComponent().addHitBox(new HitBox("HIT", new BoundingBox(0, 0, 9, 20)));
 		bullet.addComponent(new CollidableComponent(true));
-		//bullet.addComponent(new OwnerComponent(Entities.getType(owner).getValue()));
+		bullet.addComponent(new OwnerComponent(Entities.getType(owner).getValue()));
 		bullet.addControl(new OffscreenCleanControl());
-		//bullet.addControl(new BulletControl(500));
+		bullet.addControl(new BulletControl(Config.BULLET_MOVE_SPEED));
 
 		DropShadow shadow = new DropShadow(22, Color.DARKBLUE);
 		shadow.setInput(new Glow(0.8));

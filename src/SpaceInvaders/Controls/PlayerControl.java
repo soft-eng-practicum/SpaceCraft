@@ -67,10 +67,10 @@ public class PlayerControl extends AbstractControl
 	        if (!canShoot)
 	            return;
 
-	        canShoot = false;
+	       // canShoot = false;
 	        lastTimeShot = timer.getNow();
 	    //fails here
-	        //Entity bullet = EntityCreator.newLaser(getEntity());
+	        Entity bullet = EntityCreator.newLaser(getEntity());
 
 	        //getEntity().getWorld().addEntity(bullet);
 
