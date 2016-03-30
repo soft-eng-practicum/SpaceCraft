@@ -1,0 +1,39 @@
+Basic Install Guide. 
+   
+  Welcome! This is a basic document on how to install 
+  The filesroperly to Eciplse. 
+  
+  Prereqs: 
+      Windows (Mac fix is on the way.)
+      Eclipse Mars
+      Git Extention
+  Install Instructions 
+      open Eclipse Mars
+      Begin Importing 
+      Got to File, import
+      Git 
+         Projects from Git.
+      Clone URI
+      Source Git Repository
+          Location Settings
+              URI:
+                https:github.comsoft-eng-practicumSpaceInvaders
+              Host:
+                github.com
+              Repositoryath: 
+                soft-eng-practicumSpaceInvaders
+          Connection Settings
+             Protocul
+                https
+             Port:
+              null (Leave it blank)
+          Authentication Setting
+            User:
+              YOUR_USER_NAME
+            Password:
+              YOUR_PASSWORD:
+      Select Master
+      Choose your Preferred Save Location 
+        Import as Generalroject
+       
+If you find any issues with this,lease let me know.
