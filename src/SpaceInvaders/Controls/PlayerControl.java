@@ -70,9 +70,9 @@ public class PlayerControl extends AbstractControl
 	        canShoot = false;
 	        lastTimeShot = timer.getNow();
 	    //fails here
-	        //Entity bullet = EntityCreator.newLaser(getEntity());
+	        Entity bullet = EntityCreator.newLaser(getEntity());
 
-	        //getEntity().getWorld().addEntity(bullet);
+	        getEntity().getWorld().addEntity(bullet);
 
 	       // GameApplication.getService(ServiceType.AUDIO_PLAYER)
 	               // .playSound("shoot" + (int)(Math.random() * 4 + 1) + ".wav");

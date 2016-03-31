@@ -1,0 +1,142 @@
+31 Mar 2016, 18:37:54.966 [   INFO] [         FXGL.Logger] [JavaFX Application Thread] Logger initialized with level: CONFIG
+31 Mar 2016, 18:37:54.969 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] CPU cores: 4
+31 Mar 2016, 18:37:54.972 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] Free Memory: 107MB
+31 Mar 2016, 18:37:54.972 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] Max Memory: 1755MB
+31 Mar 2016, 18:37:54.973 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] Total Memory: 119MB
+31 Mar 2016, 18:37:54.973 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] System Properties:
+31 Mar 2016, 18:37:54.975 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.cpu.isalist=amd64
+31 Mar 2016, 18:37:54.975 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.desktop=windows
+31 Mar 2016, 18:37:54.975 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.io.unicode.encoding=UnicodeLittle
+31 Mar 2016, 18:37:54.976 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.cpu.endian=little
+31 Mar 2016, 18:37:54.976 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+31 Mar 2016, 18:37:54.976 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] file.separator=\
+31 Mar 2016, 18:37:54.976 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.vendor=Oracle Corporation
+31 Mar 2016, 18:37:54.977 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.boot.class.path=C:\Program Files\Java\jre1.8.0_73\lib\resources.jar;C:\Program Files\Java\jre1.8.0_73\lib\rt.jar;C:\Program Files\Java\jre1.8.0_73\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_73\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_73\lib\jce.jar;C:\Program Files\Java\jre1.8.0_73\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_73\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_73\classes
+31 Mar 2016, 18:37:54.977 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.ext.dirs=C:\Program Files\Java\jre1.8.0_73\lib\ext;C:\Windows\Sun\Java\lib\ext
+31 Mar 2016, 18:37:54.977 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.version=1.8.0_73
+31 Mar 2016, 18:37:54.977 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.vm.info=mixed mode
+31 Mar 2016, 18:37:54.977 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] awt.toolkit=sun.awt.windows.WToolkit
+31 Mar 2016, 18:37:54.978 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] user.language=en
+31 Mar 2016, 18:37:54.978 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.specification.vendor=Oracle Corporation
+31 Mar 2016, 18:37:54.978 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.java.command=SpaceInvaders.SpaceInvadersApp
+31 Mar 2016, 18:37:54.978 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.home=C:\Program Files\Java\jre1.8.0_73
+31 Mar 2016, 18:37:54.978 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.arch.data.model=64
+31 Mar 2016, 18:37:54.979 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.vm.specification.version=1.8
+31 Mar 2016, 18:37:54.979 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.class.path=D:\SpaceInvaders\target\classes;C:\Program Files\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar;C:\Program Files\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar;C:\Users\Anwar Saleeby\.m2\repository\com\github\AlmasB\FXGL\0.2.1-0.2.0-gba5970d-32\FXGL-0.2.1-0.2.0-gba5970d-32.jar;C:\Users\Anwar Saleeby\.m2\repository\com\google\inject\guice\4.0\guice-4.0.jar;C:\Users\Anwar Saleeby\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Anwar Saleeby\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Anwar Saleeby\.m2\repository\com\google\guava\guava\16.0.1\guava-16.0.1.jar;C:\Users\Anwar Saleeby\.m2\repository\org\jfxtras\jfxtras-window\8.0-r4\jfxtras-window-8.0-r4.jar;C:\Users\Anwar Saleeby\.m2\repository\org\jfxtras\jfxtras-common\8.0-r4\jfxtras-common-8.0-r4.jar;C:\Users\Anwar Saleeby\.m2\repository\com\github\AlmasB\FXEventBus\1.0\FXEventBus-1.0.jar;C:\Users\Anwar Saleeby\.m2\repository\com\github\AlmasB\Ents\1.0\Ents-1.0.jar;C:\Users\Anwar Saleeby\.m2\repository\org\apache\logging\log4j\log4j-api\2.5\log4j-api-2.5.jar;C:\Users\Anwar Saleeby\.m2\repository\org\apache\logging\log4j\log4j-core\2.5\log4j-core-2.5.jar;C:\Users\Anwar Saleeby\.m2\repository\com\github\AlmasB\AStar\1.0\AStar-1.0.jar
+31 Mar 2016, 18:37:54.979 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] user.name=Anwar Saleeby
+31 Mar 2016, 18:37:54.979 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] file.encoding=UTF-8
+31 Mar 2016, 18:37:54.980 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.specification.version=1.8
+31 Mar 2016, 18:37:54.980 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.awt.printerjob=sun.awt.windows.WPrinterJob
+31 Mar 2016, 18:37:54.980 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] user.timezone=America/New_York
+31 Mar 2016, 18:37:54.980 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] user.home=C:\Users\Anwar Saleeby
+31 Mar 2016, 18:37:54.980 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] os.version=10.0
+31 Mar 2016, 18:37:54.980 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+31 Mar 2016, 18:37:54.981 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.specification.name=Java Platform API Specification
+31 Mar 2016, 18:37:54.981 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.class.version=52.0
+31 Mar 2016, 18:37:54.981 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.library.path=C:\Program Files\Java\jre1.8.0_73\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_73/bin/server;C:/Program Files/Java/jre1.8.0_73/bin;C:/Program Files/Java/jre1.8.0_73/lib/amd64;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Anwar Saleeby\AppData\Local\Programs\Python\Python35\Scripts\;C:\Users\Anwar Saleeby\AppData\Local\Programs\Python\Python35\;C:\Users\Anwar Saleeby\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\3.2\bin;C:\Program Files\Git;C:\Program Files\eclipse;;.
+31 Mar 2016, 18:37:54.981 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.jnu.encoding=Cp1252
+31 Mar 2016, 18:37:54.981 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] os.name=Windows 10
+31 Mar 2016, 18:37:54.982 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] user.variant=
+31 Mar 2016, 18:37:54.982 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.vm.specification.vendor=Oracle Corporation
+31 Mar 2016, 18:37:54.982 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.io.tmpdir=C:\Users\ANWARS~1\AppData\Local\Temp\
+31 Mar 2016, 18:37:54.982 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] line.separator=
+
+31 Mar 2016, 18:37:54.982 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.endorsed.dirs=C:\Program Files\Java\jre1.8.0_73\lib\endorsed
+31 Mar 2016, 18:37:54.983 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] os.arch=amd64
+31 Mar 2016, 18:37:54.983 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] javafx.runtime.version=8.0.71-b15
+31 Mar 2016, 18:37:54.983 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+31 Mar 2016, 18:37:54.983 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.runtime.version=1.8.0_73-b02
+31 Mar 2016, 18:37:54.983 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.vm.specification.name=Java Virtual Machine Specification
+31 Mar 2016, 18:37:54.984 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] user.dir=D:\SpaceInvaders
+31 Mar 2016, 18:37:54.984 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] user.country=US
+31 Mar 2016, 18:37:54.984 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] user.script=
+31 Mar 2016, 18:37:54.984 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.java.launcher=SUN_STANDARD
+31 Mar 2016, 18:37:54.984 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.os.patch.level=
+31 Mar 2016, 18:37:54.985 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+31 Mar 2016, 18:37:54.985 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] file.encoding.pkg=sun.io
+31 Mar 2016, 18:37:54.985 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] path.separator=;
+31 Mar 2016, 18:37:54.985 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.vm.vendor=Oracle Corporation
+31 Mar 2016, 18:37:54.985 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.vendor.url=http://java.oracle.com/
+31 Mar 2016, 18:37:54.986 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] sun.boot.library.path=C:\Program Files\Java\jre1.8.0_73\bin
+31 Mar 2016, 18:37:54.986 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.vm.version=25.73-b02
+31 Mar 2016, 18:37:54.986 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] java.runtime.name=Java(TM) SE Runtime Environment
+31 Mar 2016, 18:37:54.986 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] javafx.version=8.0.71
+31 Mar 2016, 18:37:54.990 [   INFO] [        FXGL.Version] [JavaFX Application Thread] FXGL-0.2.1-SNAPSHOT
+31 Mar 2016, 18:37:54.990 [   INFO] [        FXGL.Version] [JavaFX Application Thread] Source code and latest builds at: https://github.com/AlmasB/FXGL
+31 Mar 2016, 18:37:54.995 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Game_clinit()
+31 Mar 2016, 18:37:55.000 [  FINER] [    FXGL.Application] [JavaFX-Launcher] FXGL_init()
+31 Mar 2016, 18:37:55.019 [  FINER] [    FXGL.Application] [JavaFX Application Thread] FXGL_start()
+31 Mar 2016, 18:37:55.019 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Initializing system properties
+31 Mar 2016, 18:37:55.021 [  FINER] [    FXGL.Application] [JavaFX Application Thread] sound.notification = system/notification.wav
+31 Mar 2016, 18:37:55.022 [  FINER] [    FXGL.Application] [JavaFX Application Thread] asset.cache.size = 35
+31 Mar 2016, 18:37:55.022 [  FINER] [    FXGL.Application] [JavaFX Application Thread] ui.font = Copperplate_Gothic_Light_Regular.ttf
+31 Mar 2016, 18:37:55.022 [  FINER] [    FXGL.Application] [JavaFX Application Thread] sound.menu.back = menu/back.wav
+31 Mar 2016, 18:37:55.023 [  FINER] [    FXGL.Application] [JavaFX Application Thread] sound.menu.select = menu/select.wav
+31 Mar 2016, 18:37:55.023 [  FINER] [    FXGL.Application] [JavaFX Application Thread] physics.ppm = 50
+31 Mar 2016, 18:37:55.023 [  FINER] [    FXGL.Application] [JavaFX Application Thread] ui.css = fxgl.css
+31 Mar 2016, 18:37:55.023 [  FINER] [    FXGL.Application] [JavaFX Application Thread] ui.icon.name = fxgl_icon.png
+31 Mar 2016, 18:37:55.024 [  FINER] [    FXGL.Application] [JavaFX Application Thread] sound.menu.press = menu/press.wav
+31 Mar 2016, 18:37:55.024 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Initializing user properties
+31 Mar 2016, 18:37:55.024 [   INFO] [    FXGL.Application] [JavaFX Application Thread] User properties not found. Using system
+31 Mar 2016, 18:37:55.034 [   INFO] [         FXGL.Logger] [JavaFX Application Thread] Logger level set to: CONFIG
+31 Mar 2016, 18:37:55.035 [   INFO] [    FXGL.Application] [JavaFX Application Thread] Application Mode: DEVELOPER
+31 Mar 2016, 18:37:55.447 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Services configuration complete
+31 Mar 2016, 18:37:55.457 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Service [EventBus] initialized
+31 Mar 2016, 18:37:55.459 [  FINER] [    FXGL.AssetLoader] [JavaFX Application Thread] Service [AssetLoader] initialized
+31 Mar 2016, 18:37:55.462 [  FINER] [    FXGL.AssetLoader] [JavaFX Application Thread] Loading from disk: /assets/sounds/system/notification.wav
+31 Mar 2016, 18:37:55.488 [  FINER] [    FXGL.AssetLoader] [JavaFX Application Thread] Loading from disk: /assets/sounds/menu/select.wav
+31 Mar 2016, 18:37:55.490 [  FINER] [    FXGL.AssetLoader] [JavaFX Application Thread] Loading from disk: /assets/sounds/menu/back.wav
+31 Mar 2016, 18:37:55.492 [  FINER] [    FXGL.AssetLoader] [JavaFX Application Thread] Loading from disk: /assets/sounds/menu/press.wav
+31 Mar 2016, 18:37:55.494 [  FINER] [    FXGL.AssetLoader] [JavaFX Application Thread] Loading from disk: /assets/ui/fonts/Copperplate_Gothic_Light_Regular.ttf
+31 Mar 2016, 18:37:55.574 [  FINER] [    FXGL.AssetLoader] [JavaFX Application Thread] Loading from disk: /assets/ui/css/fxgl.css
+31 Mar 2016, 18:37:55.574 [  FINER] [    FXGL.AssetLoader] [JavaFX Application Thread] Loading from disk: /assets/ui/icons/fxgl_icon.png
+31 Mar 2016, 18:37:55.613 [  FINER] [    FXGL.AssetLoader] [JavaFX Application Thread] Loading from disk: /assets/ui/css/fxgl_dark.css
+31 Mar 2016, 18:37:55.685 [  FINER] [        FXGL.Display] [JavaFX Application Thread] Target size: 480.0x600.0@1.0
+31 Mar 2016, 18:37:55.685 [  FINER] [        FXGL.Display] [JavaFX Application Thread] New size:    480.0x600.0@1.0
+31 Mar 2016, 18:37:55.686 [  FINER] [        FXGL.Display] [JavaFX Application Thread] Service [Display] initialized
+31 Mar 2016, 18:37:55.686 [  FINER] [        FXGL.Display] [JavaFX Application Thread] Using CSS: CSS[jar:file:/C:/Users/Anwar%20Saleeby/.m2/repository/com/github/AlmasB/FXGL/0.2.1-0.2.0-gba5970d-32/FXGL-0.2.1-0.2.0-gba5970d-32.jar!/assets/ui/css/fxgl_dark.css]
+31 Mar 2016, 18:37:55.690 [  FINER] [          FXGL.Input] [JavaFX Application Thread] Service [Input] initialized
+31 Mar 2016, 18:37:55.694 [  FINER] [    FXGL.AudioPlayer] [JavaFX Application Thread] Service [AudioPlayer] initialized
+31 Mar 2016, 18:37:55.701 [  FINER] [    FXGL.MasterTimer] [JavaFX Application Thread] Service [MasterTimer] initialized
+31 Mar 2016, 18:37:55.713 [  FINER] [      FXGL.GameScene] [JavaFX Application Thread] Game scene initialized
+31 Mar 2016, 18:37:55.715 [  FINER] [FXGL.NotificationSer] [JavaFX Application Thread] Service [NotificationService] initialized
+31 Mar 2016, 18:37:55.919 [  FINER] [      FXGL.GameWorld] [JavaFX Application Thread] Game world initialized
+31 Mar 2016, 18:37:55.964 [  FINER] [   FXGL.PhysicsWorld] [JavaFX Application Thread] Physics world initialized
+31 Mar 2016, 18:37:56.041 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Game_start()
+31 Mar 2016, 18:37:56.049 [  FINER] [          FXGL.Input] [JavaFX Application Thread] Registered new binding: Move Left A
+31 Mar 2016, 18:37:56.050 [  FINER] [          FXGL.Input] [JavaFX Application Thread] Registered new binding: Shoot Space
+31 Mar 2016, 18:37:56.051 [  FINER] [          FXGL.Input] [JavaFX Application Thread] Registered new binding: Move Right D
+31 Mar 2016, 18:37:56.053 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Saving data to profile
+31 Mar 2016, 18:37:56.054 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] Logging bundle: game
+31 Mar 2016, 18:37:56.055 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] game.playtime=1054947810
+31 Mar 2016, 18:37:56.055 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: SaveEvent
+31 Mar 2016, 18:37:56.058 [  FINER] [        FXGL.Display] [JavaFX Application Thread] Saving data to profile
+31 Mar 2016, 18:37:56.058 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] Logging bundle: scene
+31 Mar 2016, 18:37:56.058 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] scene.sizeW=480.0
+31 Mar 2016, 18:37:56.058 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] scene.sizeH=600.0
+31 Mar 2016, 18:37:56.059 [  FINER] [          FXGL.Input] [JavaFX Application Thread] Saving data to profile
+31 Mar 2016, 18:37:56.059 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] Logging bundle: input
+31 Mar 2016, 18:37:56.059 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] input.Shoot=Space
+31 Mar 2016, 18:37:56.060 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] input.Move Right=D
+31 Mar 2016, 18:37:56.060 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] input.Move Left=A
+31 Mar 2016, 18:37:56.060 [  FINER] [    FXGL.AudioPlayer] [JavaFX Application Thread] Saving data to profile
+31 Mar 2016, 18:37:56.061 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] Logging bundle: audio
+31 Mar 2016, 18:37:56.061 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] audio.musicVolume=0.5
+31 Mar 2016, 18:37:56.061 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] audio.soundVolume=0.5
+31 Mar 2016, 18:37:56.061 [  FINER] [FXGL.AchievementMana] [JavaFX Application Thread] Saving data to profile
+31 Mar 2016, 18:37:56.063 [  FINER] [    FXGL.UserProfile] [JavaFX Application Thread] Logging bundle: achievement
+31 Mar 2016, 18:37:56.092 [  FINER] [    FXGL.Application] [JavaFX Application Thread] State: STARTUP -> INTRO
+31 Mar 2016, 18:37:56.295 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Showing stage
+31 Mar 2016, 18:37:56.296 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Root size: 480.0x600.0
+31 Mar 2016, 18:37:56.297 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Scene size: 480.0x600.0
+31 Mar 2016, 18:37:56.297 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Stage size: 486.0x629.0
+31 Mar 2016, 18:38:01.365 [  FINER] [    FXGL.Application] [JavaFX Application Thread] State: INTRO -> MAIN_MENU
+31 Mar 2016, 18:38:01.391 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: DisplayEvent[type=DIALOG_OPENED]
+31 Mar 2016, 18:38:01.392 [  FINER] [          FXGL.Input] [JavaFX Application Thread] Clearing active input actions
+31 Mar 2016, 18:38:05.719 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: DisplayEvent[type=DIALOG_CLOSED]
+31 Mar 2016, 18:38:05.737 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: DisplayEvent[type=DIALOG_OPENED]
+31 Mar 2016, 18:38:05.738 [  FINER] [          FXGL.Input] [JavaFX Application Thread] Clearing active input actions
+31 Mar 2016, 18:38:45.193 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: DisplayEvent[type=CLOSE_REQUEST]
+31 Mar 2016, 18:38:45.193 [  FINER] [    FXGL.Application] [JavaFX Application Thread] Exiting Normally
+31 Mar 2016, 18:38:45.194 [  FINER] [       FXGL.EventBus] [JavaFX Application Thread] Firing event: FXGLEvent[type=EXIT]
+31 Mar 2016, 18:38:45.194 [  FINER] [         FXGL.Logger] [JavaFX Application Thread] Logger is closing

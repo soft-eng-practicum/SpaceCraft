@@ -16,6 +16,8 @@ import com.almasb.fxgl.entity.control.OffscreenCleanControl;
 import com.almasb.fxgl.entity.control.ProjectileControl;
 import com.almasb.fxgl.physics.HitBox;
 
+import SpaceInvaders.Components.OwnerComponent;
+import SpaceInvaders.Controls.BulletControl;
 import SpaceInvaders.Controls.MeteorControl;
 import SpaceInvaders.Controls.PlayerControl;
 import javafx.geometry.BoundingBox;
@@ -171,7 +173,7 @@ public final class EntityCreator
 		bullet.addComponent(new CollidableComponent(true));
 		bullet.getMainViewComponent().setView(new EntityView(assetLoader.loadTexture("tank_bullet.png")), true);
 		bullet.addControl(new ProjectileControl(new Point2D(0, Entities.getType(owner).isType(EntityType.PLAYER) ? -1 : 1), 10));
-		//bullet.addComponent(new OwnerComponent(Entities.getType(owner).getValue()));
+		bullet.addComponent(new OwnerComponent(Entities.getType(owner).getValue()));
 		bullet.addControl(new OffscreenCleanControl());
 
 		return bullet;
@@ -189,17 +191,17 @@ public final class EntityCreator
 
 		bullet.getBoundingBoxComponent().addHitBox(new HitBox("HIT", new BoundingBox(0, 0, 9, 20)));
 		bullet.addComponent(new CollidableComponent(true));
-		//bullet.addComponent(new OwnerComponent(Entities.getType(owner).getValue()));
+		bullet.addComponent(new OwnerComponent(Entities.getType(owner).getValue()));
 		bullet.addControl(new OffscreenCleanControl());
-		//bullet.addControl(new BulletControl(500));
+		bullet.addControl(new BulletControl(500));
 
 		DropShadow shadow = new DropShadow(22, Color.DARKBLUE);
 		shadow.setInput(new Glow(0.8));
 
 		EntityView view = new EntityView();
-		view.addNode(assetLoader.loadTexture("laser1.png"));
+		view.addNode(assetLoader.loadTexture("bullet_red.png"));
 
-		Texture t = assetLoader.loadTexture("laser2.png");
+		Texture t = assetLoader.loadTexture("bullet_red.png");
 		t.relocate(-2, -20);
 
 		view.addNode(t);

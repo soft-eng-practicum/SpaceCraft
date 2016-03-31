@@ -39,13 +39,13 @@ public class SpaceInvadersApp extends GameApplication
 
 		settings.setMenuEnabled(true);
 
-		settings.setTitle("Space Invaders 0.1dev");
+		settings.setTitle("Space Invaders v1.1");
 
 		settings.setWidth(Config.WIDTH);
 		settings.setHeight(Config.HEIGHT);
-		settings.setIntroEnabled(false);
+		settings.setIntroEnabled(true);
 
-		settings.setMenuEnabled(false);
+		settings.setMenuEnabled(true);
 
 	}
 
