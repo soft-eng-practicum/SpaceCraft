@@ -93,16 +93,14 @@ public class SpaceInvadersApp extends GameApplication
 
 	@OnUserAction(name = "Move Right", type = ActionType.ON_ACTION)
 	public void moveRight() {
-
-					playerControl.right();
-		
+		playerControl.right();
 		System.out.println("Moved Player to the right");
 	}
 
 	@OnUserAction(name = "Shoot", type = ActionType.ON_ACTION)
 	public void shoot(){
 		//implement shooting
-		playerControl.shoot(); //Will break the program
+		playerControl.shoot(); 
 		System.out.println("Firing Lazer!");
 	}
 
@@ -149,11 +147,11 @@ public class SpaceInvadersApp extends GameApplication
 			}
 		}
 
-		spawnWall(40, getHeight() - 100);
-		spawnWall(120, getHeight() - 100);
+		spawnWall(40, getHeight() - Config.WALL_MIN_HEIGHT);
+		spawnWall(120, getHeight() - Config.WALL_MIN_HEIGHT);
 
-		spawnWall(getWidth() - 160, getHeight() - 100);
-		spawnWall(getWidth() - 80, getHeight() - 100);
+		spawnWall(getWidth() - 160, getHeight() - Config.WALL_MIN_HEIGHT);
+		spawnWall(getWidth() - 80, getHeight() - Config.WALL_MIN_HEIGHT);
 
 		//getInput().setProcessInput(true);
 	}

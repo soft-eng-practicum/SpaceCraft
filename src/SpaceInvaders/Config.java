@@ -21,4 +21,6 @@ public final class Config
 	//Bullet Config Settings
 	public static final double BULLET_MOVE_SPEED = 500;
 	
+	public static final int WALL_MIN_HEIGHT = 110;
+	
 }
