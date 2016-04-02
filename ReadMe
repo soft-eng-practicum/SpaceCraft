@@ -33,7 +33,28 @@ Basic Install Guide.
             Password:
               YOUR_PASSWORD:
       Select Master
+      
       Choose your Preferred Save Location 
         Import as Generalroject
-       
-If you find any issues with this,lease let me know.
+        
+        
+        
+        If you run into the issue of '.project already exists'
+         import as an Existing Project
+         use the working directery
+         
+         'Choose your Preferred Save Location'/Spaceinvaders
+         
+      import
+            
+        
+        
+To launch the program:
+   Navigate to src/SpaceInvaders/SpaceInvadersApp.java in your
+   preferred java IDE and run the program.
+   
+   
+   
+If you find any issues with this, please post the issues under
+Issues on the GitHub Page. 
+   https://github.com/soft-eng-practicum/spaceinvaders/issues
