@@ -1,6 +1,7 @@
 package SpaceInvaders;
 
 import com.almasb.ents.Entity;
+
 import com.almasb.fxgl.app.GameApplication;
 import com.almasb.fxgl.asset.Texture;
 import com.almasb.fxgl.entity.EntityView;
@@ -16,6 +17,7 @@ import javafx.scene.input.KeyCode;
 import SpaceInvaders.Config;
 import SpaceInvaders.Collision.BulletPlayerHandler;
 import SpaceInvaders.Controls.PlayerControl;
+import SpaceInvaders.EntityCreator.EntityType;
 
 public class SpaceInvadersApp extends GameApplication
 {
@@ -30,6 +32,11 @@ public class SpaceInvadersApp extends GameApplication
 
 	//private GameController uiController;
 
+	//private enum Type 
+	//{
+		//PLAYER, ENEMY, PLAYER_BULLET, ENEMY_BULLET
+	//}
+	
 	/*
 	 * Starts 
 	 */
@@ -40,12 +47,12 @@ public class SpaceInvadersApp extends GameApplication
 		settings.setMenuEnabled(false);
 
 		settings.setTitle("Space Invaders v1.1");
-
-		settings.setWidth(Config.WIDTH);
-		settings.setHeight(Config.HEIGHT);
+		//Fixed the display of the game window for better viewing -- XL
+		settings.setWidth(600);
+		settings.setHeight(800);
 		settings.setIntroEnabled(false);
-
 		settings.setMenuEnabled(true);
+		settings.setShowFPS(false);
 
 	}
 
@@ -70,6 +77,14 @@ public class SpaceInvadersApp extends GameApplication
 		initLevel();
 		spawnPlayer();
 
+		//Created for loop to make spacing for enemies and so they can move -- XL
+		for(int y = 0; y < 5; y++)
+		{
+			for(int x = 0; x < 10; x++)
+			{
+				spawnEnemies(x * (40 + 20), y * (40 + 20));
+			}
+		}
 
 	}
 
@@ -132,6 +147,15 @@ public class SpaceInvadersApp extends GameApplication
 	private void spawnEnemies(double x, double y)
 	{
 		Entity enemy = EntityCreator.newEnemy(x, y);
+		//enemy.setSceneView();
+		//enemy.setCollidable(true);
+		
+		//added the texture for the enemies, and set dimension -- XL
+		Texture txtr = getAssetLoader().loadTexture("enemy.png");
+		txtr.setFitWidth(40);
+		txtr.setFitHeight(40);
+		
+		
 
 
 		getGameWorld().addEntity(enemy);
