@@ -48,8 +48,8 @@ public class SpaceInvadersApp extends GameApplication
 
 		settings.setTitle("Space Invaders v1.1");
 		//Fixed the display of the game window for better viewing -- XL
-		settings.setWidth(600);
-		settings.setHeight(800);
+		settings.setWidth(Config.SCREEN_WIDTH);
+		settings.setHeight(Config.SCREEN_HEIGHT);
 		settings.setIntroEnabled(false);
 		settings.setMenuEnabled(true);
 		settings.setShowFPS(false);
@@ -77,14 +77,7 @@ public class SpaceInvadersApp extends GameApplication
 		initLevel();
 		spawnPlayer();
 
-		//Created for loop to make spacing for enemies and so they can move -- XL
-		for(int y = 0; y < 5; y++)
-		{
-			for(int x = 0; x < 10; x++)
-			{
-				spawnEnemies(x * (40 + 20), y * (40 + 20));
-			}
-		}
+
 
 	}
 
@@ -144,6 +137,7 @@ public class SpaceInvadersApp extends GameApplication
 
 	}
 
+	//need to change to enemy
 	private void spawnEnemies(double x, double y)
 	{
 		Entity enemy = EntityCreator.newEnemy(x, y);
@@ -151,7 +145,7 @@ public class SpaceInvadersApp extends GameApplication
 		//enemy.setCollidable(true);
 		
 		//added the texture for the enemies, and set dimension -- XL
-		Texture txtr = getAssetLoader().loadTexture("enemy.png");
+		Texture txtr = getAssetLoader().loadTexture(Config.ENEMY_IMAGE);
 		txtr.setFitWidth(40);
 		txtr.setFitHeight(40);
 		
@@ -165,12 +159,17 @@ public class SpaceInvadersApp extends GameApplication
 		getGameWorld().addEntity(EntityCreator.newWall(x, y));
 	}
 	private void initLevel() {
+		
+		//it is in the spawning. Will try to make based on Screen_Width
 		for (int y = 0; y < 5; y++) {
 			for (int x = 0; x < 8; x++) {
 				spawnEnemies(x * (40 + 20), 100 + y * (40 + 20));
 			}
 		}
 
+		
+		
+		
 		spawnWall(40, getHeight() - Config.WALL_MIN_HEIGHT);
 		spawnWall(120, getHeight() - Config.WALL_MIN_HEIGHT);
 

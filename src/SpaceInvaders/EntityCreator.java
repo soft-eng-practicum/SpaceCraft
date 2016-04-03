@@ -132,7 +132,7 @@ public final class EntityCreator
 		player.getTypeComponent().setValue(EntityType.PLAYER);
 		player.getPositionComponent().setValue(x, y);
 
-		Texture texture = assetLoader.loadTexture(Config.SPACE_SHIP);
+		Texture texture = assetLoader.loadTexture(Config.SPACE_SHIP_IMAGE);
 		texture.setPreserveRatio(true);
 		texture.setFitHeight(Config.PLAYER_HEIGHT);
 
@@ -171,7 +171,7 @@ public final class EntityCreator
 		bullet.getPositionComponent().setValue(center);
 
 		bullet.addComponent(new CollidableComponent(true));
-		bullet.getMainViewComponent().setView(new EntityView(assetLoader.loadTexture(Config.BULLET)), true);
+		bullet.getMainViewComponent().setView(new EntityView(assetLoader.loadTexture(Config.BULLET_IMAGE)), true);
 		bullet.addControl(new ProjectileControl(new Point2D(0, Entities.getType(owner).isType(EntityType.PLAYER) ? -1 : 1), 10));
 		bullet.addComponent(new OwnerComponent(Entities.getType(owner).getValue()));
 		bullet.addControl(new OffscreenCleanControl());
@@ -199,9 +199,9 @@ public final class EntityCreator
 		shadow.setInput(new Glow(0.8));
 
 		EntityView view = new EntityView();
-		view.addNode(assetLoader.loadTexture(Config.LAZER));
+		view.addNode(assetLoader.loadTexture(Config.LAZER_IMAGE));
 
-		Texture t = assetLoader.loadTexture(Config.LAZER);
+		Texture t = assetLoader.loadTexture(Config.LAZER_IMAGE);
 		t.relocate(-2, -20);
 
 		view.addNode(t);
@@ -216,7 +216,7 @@ public final class EntityCreator
 		GameEntity wall = new GameEntity();
 		wall.getTypeComponent().setValue(EntityType.WALL);
 		wall.getPositionComponent().setValue(x, y);
-		wall.getMainViewComponent().setView(new EntityView(assetLoader.loadTexture(Config.WALL)), true);
+		wall.getMainViewComponent().setView(new EntityView(assetLoader.loadTexture(Config.WALL_IMAGE)), true);
 		wall.addComponent(new CollidableComponent(true));
 		//wall.addComponent(new HPComponent(7));
 
@@ -227,7 +227,7 @@ public final class EntityCreator
 		GameEntity bonus = new GameEntity();
 		bonus.getTypeComponent().setValue(EntityType.BONUS);
 		bonus.getPositionComponent().setValue(x, y);
-		bonus.getMainViewComponent().setView(new EntityView(assetLoader.loadTexture(Config.BONUS_LIFE)), true);
+		bonus.getMainViewComponent().setView(new EntityView(assetLoader.loadTexture(Config.BONUS_LIFE_IMAGE)), true);
 
 		//bonus.addComponent(new SubTypeComponent(type));
 		bonus.addComponent(new CollidableComponent(true));
@@ -240,7 +240,7 @@ public final class EntityCreator
 		GameEntity explosion = new GameEntity();
 		explosion.getPositionComponent().setValue(position.subtract(40, 40));
 
-		Texture animation = assetLoader.loadTexture(Config.EXPLOSION).toStaticAnimatedTexture(48, Duration.seconds(2));
+		Texture animation = assetLoader.loadTexture(Config.EXPLOSION_IMAGE).toStaticAnimatedTexture(48, Duration.seconds(2));
 		animation.setFitWidth(80);
 		animation.setFitHeight(80);
 
@@ -254,7 +254,7 @@ public final class EntityCreator
 		GameEntity laserHit = new GameEntity();
 		laserHit.getPositionComponent().setValue(position.subtract(15, 15));
 
-		Texture hit = assetLoader.loadTexture(Config.LAZER_HIT);
+		Texture hit = assetLoader.loadTexture(Config.LAZER_HIT_IMAGE);
 		hit.setFitWidth(15);
 		hit.setFitHeight(15);
 

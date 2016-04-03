@@ -59,7 +59,7 @@ public class PlayerControl extends AbstractControl
 
 	public void right()
 	{
-		if(position.getX() + bbox.getWidth() + dx <= Config.WIDTH)
+		if(position.getX() + bbox.getWidth() + dx <= Config.SCREEN_WIDTH)
 			position.translateX(dx);
 	}
 	public void shoot() {
