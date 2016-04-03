@@ -16,7 +16,7 @@ public final class Config
 	public static final int	SCREEN_HEIGHT = 600; //made height shorter so it can show on my screen. 
 
 	//Player Config Settings
-	public static final double PLAYER_ATTACK_SPEED = 1;
+	public static final double PLAYER_ATTACK_SPEED = 5;
 	public static final double PLAYER_MOVE_SPEED = 50;
 	public static final int PLAYER_HEIGHT = 40;
 	public static final String SPACE_SHIP_IMAGE = "spaceshipReduced.png";
@@ -32,7 +32,7 @@ public final class Config
 	//Image Config Settings
 	////mainly in the EntityCreator
 	
-	public static final String ENEMY_REDUCED = "enemyReduced"
+	public static final String ENEMY = "enemyReduced"
 			+ ((int)(Math.random() * 3) + 1) 
 			+ ".png";
 

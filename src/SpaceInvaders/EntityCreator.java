@@ -150,8 +150,9 @@ public final class EntityCreator
 		enemy.getTypeComponent().setValue(EntityType.ENEMY);
 		enemy.getPositionComponent().setValue(x, y);
 
-		Texture texture = assetLoader.loadTexture(Config.ENEMY_REDUCED)
-				.toStaticAnimatedTexture(2, Duration.seconds(2));
+		Texture texture = assetLoader.loadTexture(Config.ENEMY)
+				/*.toStaticAnimatedTexture(30, Duration.seconds(.5))*/;
+				
 
 		enemy.getMainViewComponent().setView(new EntityView(texture), true);
 		enemy.addComponent(new CollidableComponent(true));
