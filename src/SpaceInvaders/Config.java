@@ -33,7 +33,8 @@ public final class Config
 	////mainly in the EntityCreator
 	
 	public static final String ENEMY = "enemyReduced"
-			+ ((int)(Math.random() * 3) + 1) 
+			//+ ((int)(Math.random() * 3) + 1) 
+			+ 1 //This line is temp
 			+ ".png";
 
 	public static final String LAZER_IMAGE = "bullet_red.png";

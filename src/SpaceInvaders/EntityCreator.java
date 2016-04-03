@@ -151,7 +151,7 @@ public final class EntityCreator
 		enemy.getPositionComponent().setValue(x, y);
 
 		Texture texture = assetLoader.loadTexture(Config.ENEMY)
-				/*.toStaticAnimatedTexture(30, Duration.seconds(.5))*/;
+				.toStaticAnimatedTexture(2, Duration.seconds(2));
 				
 
 		enemy.getMainViewComponent().setView(new EntityView(texture), true);
