@@ -22,7 +22,7 @@ public class PlayerControl extends AbstractControl
 	private MasterTimer timer;
 
 	private double dx = 0;
-	private double attackSpeed = Config.PLAYER_MOVE_SPEED;
+	private double attackSpeed = Config.PLAYER_ATTACK_SPEED;
 	private boolean canShoot = true;
 	private long lastTimeShot = 0;
 

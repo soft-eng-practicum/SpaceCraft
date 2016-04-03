@@ -16,6 +16,7 @@ public final class Config
 	public static final int	SCREEN_HEIGHT = 600; //made height shorter so it can show on my screen. 
 
 	//Player Config Settings
+	public static final double PLAYER_ATTACK_SPEED = 1;
 	public static final double PLAYER_MOVE_SPEED = 50;
 	public static final int PLAYER_HEIGHT = 40;
 	public static final String SPACE_SHIP_IMAGE = "spaceshipReduced.png";
@@ -40,7 +41,7 @@ public final class Config
 	public static final String BONUS_LIFE_IMAGE = "life.png";
 	public static final String EXPLOSION_IMAGE = "explosion.png";
 	public static final String LAZER_HIT_IMAGE = "lazer_hit.png";
-	public static final String ENEMY_IMAGE = "enemy.png";
+	public static final String ENEMY_IMAGE = "enemyReduced.png";
 	
 	
 
