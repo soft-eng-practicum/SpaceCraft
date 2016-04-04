@@ -35,10 +35,7 @@ public class SpaceInvadersApp extends GameApplication
 
 	//private GameController uiController;
 
-	//private enum Type 
-	//{
-		//PLAYER, ENEMY, PLAYER_BULLET, ENEMY_BULLET
-	//}
+	
 	
 	/*
 	 * Starts 
@@ -47,14 +44,14 @@ public class SpaceInvadersApp extends GameApplication
 	protected void initSettings(GameSettings settings)
 	{
 
-		settings.setMenuEnabled(false);
+	
 
 		settings.setTitle("Space Invaders v1.1");
 		//Fixed the display of the game window for better viewing -- XL
 		settings.setWidth(Config.SCREEN_WIDTH);
 		settings.setHeight(Config.SCREEN_HEIGHT);
 		settings.setIntroEnabled(false);
-		settings.setMenuEnabled(true);
+		settings.setMenuEnabled(false);
 		settings.setShowFPS(false);
 
 	}
