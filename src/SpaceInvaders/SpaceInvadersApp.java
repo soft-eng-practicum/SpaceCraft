@@ -15,7 +15,10 @@ import javafx.beans.property.IntegerProperty;
 import javafx.scene.Parent;
 import javafx.scene.input.KeyCode;
 import SpaceInvaders.Config;
+import SpaceInvaders.Collision.BulletEnemyHandler;
 import SpaceInvaders.Collision.BulletPlayerHandler;
+import SpaceInvaders.Components.ImmuneComponent;
+import SpaceInvaders.Components.OwnerComponent;
 import SpaceInvaders.Controls.PlayerControl;
 import SpaceInvaders.EntityCreator.EntityType;
 
@@ -81,7 +84,6 @@ public class SpaceInvadersApp extends GameApplication
 
 	}
 
-
 	@Override
 	protected void initInput()
 	{
@@ -117,6 +119,7 @@ public class SpaceInvadersApp extends GameApplication
 	{
 		PhysicsWorld worldPhysics = getPhysicsWorld();
 		worldPhysics.addCollisionHandler(new BulletPlayerHandler());
+        worldPhysics.addCollisionHandler(new BulletEnemyHandler());
 
 
 	}
