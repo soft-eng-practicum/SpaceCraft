@@ -1,4 +1,4 @@
-package SpaceInvaders;
+package SpaceCraft;
 
 import java.util.Random;
 

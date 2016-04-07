@@ -8,7 +8,7 @@ import com.almasb.fxgl.entity.component.MainViewComponent;
 import com.almasb.fxgl.entity.component.PositionComponent;
 import com.almasb.fxgl.physics.CollisionHandler;
 
-import SpaceInvaders.EntityCreator;
+import SpaceCraft.EntityCreator;
 import SpaceInvaders.Components.HealthComponent;
 import SpaceInvaders.Components.OwnerComponent;
 import SpaceInvaders.Event.GameEvent;

@@ -8,7 +8,7 @@ import com.almasb.fxgl.audio.AudioPlayer;
 import com.almasb.fxgl.entity.component.PositionComponent;
 import com.almasb.fxgl.time.LocalTimer;
 
-import SpaceInvaders.EntityCreator;
+import SpaceCraft.EntityCreator;
 import javafx.util.Duration;
 
 public class EnemyControl extends AbstractControl {

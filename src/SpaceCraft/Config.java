@@ -1,4 +1,4 @@
-package SpaceInvaders;
+package SpaceCraft;
 
 public final class Config
 {

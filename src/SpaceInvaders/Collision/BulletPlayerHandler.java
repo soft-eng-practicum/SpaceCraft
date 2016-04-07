@@ -5,7 +5,7 @@ import com.almasb.fxgl.app.GameApplication;
 import com.almasb.fxgl.app.ServiceType;
 import com.almasb.fxgl.physics.CollisionHandler;
 
-import SpaceInvaders.EntityCreator;
+import SpaceCraft.EntityCreator;
 import SpaceInvaders.Components.ImmuneComponent;
 import SpaceInvaders.Components.OwnerComponent;
 import SpaceInvaders.Event.GameEvent;

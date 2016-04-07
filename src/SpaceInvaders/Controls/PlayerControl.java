@@ -8,8 +8,8 @@ import com.almasb.fxgl.entity.component.BoundingBoxComponent;
 import com.almasb.fxgl.entity.component.PositionComponent;
 import com.almasb.fxgl.time.MasterTimer;
 
-import SpaceInvaders.Config;
-import SpaceInvaders.EntityCreator;
+import SpaceCraft.Config;
+import SpaceCraft.EntityCreator;
 import SpaceInvaders.Components.ImmuneComponent;
 
 

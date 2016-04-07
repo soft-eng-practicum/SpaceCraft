@@ -1,6 +1,6 @@
 package SpaceInvaders.Event;
 
-import SpaceInvaders.EntityCreator;
+import SpaceCraft.EntityCreator;
 import javafx.beans.NamedArg;
 import javafx.event.Event;
 import javafx.event.EventType;
@@ -19,7 +19,7 @@ public class BonusPickupEvent extends GameEvent
         this.type = type;
     }
 
-    public SpaceInvaders.EntityCreator.BonusType getType() {
+    public SpaceCraft.EntityCreator.BonusType getType() {
         return type;
     }
 

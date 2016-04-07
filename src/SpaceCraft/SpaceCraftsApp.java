@@ -1,4 +1,4 @@
-package SpaceInvaders;
+package SpaceCraft;
 
 import com.almasb.ents.Entity;
 
@@ -11,18 +11,18 @@ import com.almasb.fxgl.input.InputMapping;
 import com.almasb.fxgl.physics.PhysicsWorld;
 import com.almasb.fxgl.settings.GameSettings;
 
+import SpaceCraft.Config;
+import SpaceCraft.EntityCreator.EntityType;
 import javafx.beans.property.IntegerProperty;
 import javafx.scene.Parent;
 import javafx.scene.input.KeyCode;
-import SpaceInvaders.Config;
 import SpaceInvaders.Collision.BulletEnemyHandler;
 import SpaceInvaders.Collision.BulletPlayerHandler;
 import SpaceInvaders.Components.ImmuneComponent;
 import SpaceInvaders.Components.OwnerComponent;
 import SpaceInvaders.Controls.PlayerControl;
-import SpaceInvaders.EntityCreator.EntityType;
 
-public class SpaceInvadersApp extends GameApplication
+public class SpaceCraftsApp extends GameApplication
 {
 
 	private GameEntity player;
