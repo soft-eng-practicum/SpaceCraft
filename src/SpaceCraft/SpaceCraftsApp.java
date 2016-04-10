@@ -8,16 +8,21 @@ import com.almasb.fxgl.entity.EntityView;
 import com.almasb.fxgl.entity.GameEntity;
 import com.almasb.fxgl.input.*;
 import com.almasb.fxgl.input.InputMapping;
+import com.almasb.fxgl.physics.PhysicsComponent;
+
 import com.almasb.fxgl.physics.PhysicsWorld;
 import com.almasb.fxgl.settings.GameSettings;
+import javafx.geometry.Point2D;
 
 import SpaceCraft.Config;
 import SpaceCraft.EntityCreator.EntityType;
 import javafx.beans.property.IntegerProperty;
 import javafx.scene.Parent;
 import javafx.scene.input.KeyCode;
+import javafx.util.Duration;
 import SpaceInvaders.Collision.BulletEnemyHandler;
 import SpaceInvaders.Collision.BulletPlayerHandler;
+import SpaceInvaders.Collision.BulletWallHandler;
 import SpaceInvaders.Components.ImmuneComponent;
 import SpaceInvaders.Components.OwnerComponent;
 import SpaceInvaders.Controls.PlayerControl;
@@ -117,8 +122,7 @@ public class SpaceCraftsApp extends GameApplication
 		PhysicsWorld worldPhysics = getPhysicsWorld();
 		worldPhysics.addCollisionHandler(new BulletPlayerHandler());
         worldPhysics.addCollisionHandler(new BulletEnemyHandler());
-
-
+        worldPhysics.addCollisionHandler(new BulletWallHandler());
 	}
 
 	@Override
@@ -136,6 +140,19 @@ public class SpaceCraftsApp extends GameApplication
 
 
 	}
+	
+	private void spawnBackground()
+	{
+		Entity bg = EntityCreator.newBackground(getWidth(), getHeight());
+		
+		getGameWorld().addEntity(bg);
+		
+		getMasterTimer().runAtInterval(() -> {
+				Entity meteor = EntityCreator.newMeteor();
+				
+				getGameWorld().addEntity(meteor);
+		}, Duration.seconds(3));
+	}
 
 	//need to change to enemy
 	private void spawnEnemies(double x, double y)
@@ -143,14 +160,11 @@ public class SpaceCraftsApp extends GameApplication
 		Entity enemy = EntityCreator.newEnemy(x, y);
 		//enemy.setSceneView();
 		//enemy.setCollidable(true);
-		
+				
 		//added the texture for the enemies, and set dimension -- XL
-		Texture txtr = getAssetLoader().loadTexture(Config.ENEMY_IMAGE);
-		txtr.setFitWidth(40);
-		txtr.setFitHeight(40);
-		
-		
-
+		//Texture txtr = getAssetLoader().loadTexture(Config.ENEMY_IMAGE);
+		//txtr.setFitWidth(40);
+		//txtr.setFitHeight(40);
 
 		getGameWorld().addEntity(enemy);
 	}
