@@ -21,50 +21,56 @@ import javafx.util.Duration;
 public class BulletEnemyHandler extends CollisionHandler
 {
 
-	public BulletEnemyHandler() {
+
+	public BulletEnemyHandler() 
+	{
 		super(EntityCreator.EntityType.BULLET, EntityCreator.EntityType.ENEMY);
-		
+
 	}
-	
+
+
 	protected void onCollisionBegin(Entity bullet, Entity enemy)
 	{
+		try{
 			Object owner = bullet.getComponentUnsafe(OwnerComponent.class).getValue();
-			
+
 			if(owner == EntityCreator.EntityType.ENEMY)
 			{
 				return;
 			}
-			
+
 			Point2D hitPosition = bullet.getComponentUnsafe(PositionComponent.class	).getValue();
 			bullet.removeFromWorld();
-			
+
 			HealthComponent health = enemy.getComponentUnsafe(HealthComponent.class);
 			health.setValue(health.getValue() - 1);
-			
+
 			if(health.getValue() <= 0)
 			{
 				Entity explosion = EntityCreator.newExplosion(Entities.getBBox(enemy).getCenterWorld());
 				enemy.getWorld().addEntity(explosion);
-				
+
 				enemy.removeFromWorld();
-				
-				
-				GameApplication.getService(ServiceType.AUDIO_PLAYER).playSound("explosion.wav");
-				GameApplication.getService(ServiceType.EVENT_BUS).fireEvent(new GameEvent(GameEvent.ENEMY_KILLED));
+
+
+				//GameApplication.getService(ServiceType.AUDIO_PLAYER).playSound("explosion.wav");
+				//	GameApplication.getService(ServiceType.EVENT_BUS).fireEvent(new GameEvent(GameEvent.ENEMY_KILLED));
 			} else {
 				Entity laserHit = EntityCreator.newLaserHit(hitPosition);
-				
+
 				enemy.getWorld().addEntity(laserHit);
-				
+
 				enemy.getComponentUnsafe(MainViewComponent.class).getView().setBlendMode(BlendMode.RED);
-				
+
 				GameApplication.getService(ServiceType.MASTER_TIMER)
-					.runOnceAfter(() -> {
-						if(enemy.isActive())
-							enemy.getComponentUnsafe(MainViewComponent.class).getView().setBlendMode(null);
-					}, Duration.seconds(0.33));
+				.runOnceAfter(() -> {
+					if(enemy.isActive())
+						enemy.getComponentUnsafe(MainViewComponent.class).getView().setBlendMode(null);
+				}, Duration.seconds(0.33));
 			}
-	}
-	
+		}catch (NullPointerException npe){
+
+		}
+	} 
 
 }
