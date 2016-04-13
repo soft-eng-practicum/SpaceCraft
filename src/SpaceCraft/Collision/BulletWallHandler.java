@@ -1,11 +1,11 @@
-package SpaceInvaders.Collision;
+package SpaceCraft.Collision;
 
 import com.almasb.ents.Entity;
 import com.almasb.fxgl.physics.CollisionHandler;
 
 import SpaceCraft.EntityCreator;
-import SpaceInvaders.Components.HealthComponent;
-import SpaceInvaders.Components.OwnerComponent;
+import SpaceCraft.Components.HealthComponent;
+import SpaceCraft.Components.OwnerComponent;
 
 public class BulletWallHandler extends CollisionHandler
 {

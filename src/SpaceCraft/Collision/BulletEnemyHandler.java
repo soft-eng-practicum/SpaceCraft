@@ -1,4 +1,4 @@
-package SpaceInvaders.Collision;
+package SpaceCraft.Collision;
 
 import com.almasb.ents.Entity;
 import com.almasb.fxgl.app.GameApplication;
@@ -9,9 +9,9 @@ import com.almasb.fxgl.entity.component.PositionComponent;
 import com.almasb.fxgl.physics.CollisionHandler;
 
 import SpaceCraft.EntityCreator;
-import SpaceInvaders.Components.HealthComponent;
-import SpaceInvaders.Components.OwnerComponent;
-import SpaceInvaders.Event.GameEvent;
+import SpaceCraft.Components.HealthComponent;
+import SpaceCraft.Components.OwnerComponent;
+import SpaceCraft.Event.GameEvent;
 import javafx.geometry.Point2D;
 import javafx.scene.effect.BlendMode;
 import javafx.scene.paint.Color;

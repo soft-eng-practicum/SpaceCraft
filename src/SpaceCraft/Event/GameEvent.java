@@ -1,4 +1,4 @@
-package SpaceInvaders.Event;
+package SpaceCraft.Event;
 
 /**
  * Class: 

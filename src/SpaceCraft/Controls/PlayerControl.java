@@ -1,4 +1,4 @@
-package SpaceInvaders.Controls;
+package SpaceCraft.Controls;
 
 import com.almasb.ents.AbstractControl;
 import com.almasb.ents.Entity;
@@ -10,7 +10,7 @@ import com.almasb.fxgl.time.MasterTimer;
 
 import SpaceCraft.Config;
 import SpaceCraft.EntityCreator;
-import SpaceInvaders.Components.ImmuneComponent;
+import SpaceCraft.Components.ImmuneComponent;
 
 
 public class PlayerControl extends AbstractControl 

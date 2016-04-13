@@ -1,4 +1,4 @@
-package SpaceInvaders.Controls;
+package SpaceCraft.Controls;
 
 import org.junit.After;
 import org.junit.AfterClass;

@@ -15,17 +15,17 @@ import com.almasb.fxgl.settings.GameSettings;
 import javafx.geometry.Point2D;
 
 import SpaceCraft.Config;
+import SpaceCraft.Collision.BulletEnemyHandler;
+import SpaceCraft.Collision.BulletPlayerHandler;
+import SpaceCraft.Collision.BulletWallHandler;
+import SpaceCraft.Components.ImmuneComponent;
+import SpaceCraft.Components.OwnerComponent;
+import SpaceCraft.Controls.PlayerControl;
 import SpaceCraft.EntityCreator.EntityType;
 import javafx.beans.property.IntegerProperty;
 import javafx.scene.Parent;
 import javafx.scene.input.KeyCode;
 import javafx.util.Duration;
-import SpaceInvaders.Collision.BulletEnemyHandler;
-import SpaceInvaders.Collision.BulletPlayerHandler;
-import SpaceInvaders.Collision.BulletWallHandler;
-import SpaceInvaders.Components.ImmuneComponent;
-import SpaceInvaders.Components.OwnerComponent;
-import SpaceInvaders.Controls.PlayerControl;
 
 public class SpaceCraftsApp extends GameApplication
 {

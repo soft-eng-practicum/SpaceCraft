@@ -16,10 +16,10 @@ import com.almasb.fxgl.entity.control.OffscreenCleanControl;
 import com.almasb.fxgl.entity.control.ProjectileControl;
 import com.almasb.fxgl.physics.HitBox;
 
-import SpaceInvaders.Components.OwnerComponent;
-import SpaceInvaders.Controls.BulletControl;
-import SpaceInvaders.Controls.MeteorControl;
-import SpaceInvaders.Controls.PlayerControl;
+import SpaceCraft.Components.OwnerComponent;
+import SpaceCraft.Controls.BulletControl;
+import SpaceCraft.Controls.MeteorControl;
+import SpaceCraft.Controls.PlayerControl;
 import javafx.geometry.BoundingBox;
 import javafx.geometry.Point2D;
 import javafx.scene.effect.DropShadow;

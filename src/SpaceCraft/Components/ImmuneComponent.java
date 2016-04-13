@@ -1,4 +1,4 @@
-package SpaceInvaders.Components;
+package SpaceCraft.Components;
 
 import com.almasb.ents.component.BooleanComponent;
 

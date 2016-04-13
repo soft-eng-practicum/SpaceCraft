@@ -1,4 +1,4 @@
-package SpaceInvaders.Controls;
+package SpaceCraft.Controls;
 
 import com.almasb.ents.AbstractControl;
 import com.almasb.ents.Entity;

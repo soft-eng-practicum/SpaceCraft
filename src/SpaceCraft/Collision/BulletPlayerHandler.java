@@ -1,4 +1,4 @@
-package SpaceInvaders.Collision;
+package SpaceCraft.Collision;
 
 import com.almasb.ents.Entity;
 import com.almasb.fxgl.app.GameApplication;
@@ -6,9 +6,9 @@ import com.almasb.fxgl.app.ServiceType;
 import com.almasb.fxgl.physics.CollisionHandler;
 
 import SpaceCraft.EntityCreator;
-import SpaceInvaders.Components.ImmuneComponent;
-import SpaceInvaders.Components.OwnerComponent;
-import SpaceInvaders.Event.GameEvent;
+import SpaceCraft.Components.ImmuneComponent;
+import SpaceCraft.Components.OwnerComponent;
+import SpaceCraft.Event.GameEvent;
 
 public class BulletPlayerHandler extends CollisionHandler
 {

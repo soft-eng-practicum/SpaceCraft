@@ -1,4 +1,4 @@
-package SpaceInvaders.Controls;
+package SpaceCraft.Controls;
 
 import com.almasb.ents.AbstractControl;
 import com.almasb.ents.Entity;
@@ -8,7 +8,7 @@ import com.almasb.fxgl.entity.component.PositionComponent;
 
 import SpaceCraft.Config;
 import SpaceCraft.EntityCreator;
-import SpaceInvaders.Components.*;
+import SpaceCraft.Components.*;
 
 public class BulletControl extends AbstractControl {
 
