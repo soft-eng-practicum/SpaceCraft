@@ -51,7 +51,7 @@ public class SpaceCraftsApp extends GameApplication
 
 	
 
-		settings.setTitle("Space Invaders v1.1");
+		settings.setTitle("SpaceCraft v1.1");
 		//Fixed the display of the game window for better viewing -- XL
 		settings.setWidth(Config.SCREEN_WIDTH);
 		settings.setHeight(Config.SCREEN_HEIGHT);
@@ -200,6 +200,8 @@ public class SpaceCraftsApp extends GameApplication
 
 		getGameWorld().addEntity(player);
 	}
+	
+	
 
 
 
