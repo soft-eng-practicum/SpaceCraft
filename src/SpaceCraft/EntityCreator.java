@@ -20,6 +20,7 @@ import com.almasb.fxgl.physics.HitBox;
 import SpaceCraft.Components.HealthComponent;
 import SpaceCraft.Components.OwnerComponent;
 import SpaceCraft.Controls.BulletControl;
+import SpaceCraft.Controls.LaserHitControl;
 import SpaceCraft.Controls.MeteorControl;
 import SpaceCraft.Controls.PlayerControl;
 import javafx.geometry.BoundingBox;
@@ -151,7 +152,7 @@ public final class EntityCreator
 		GameEntity enemy = new GameEntity();
 		enemy.getTypeComponent().setValue(EntityType.ENEMY);
 		enemy.getPositionComponent().setValue(x, y);
-//		enemy.getComponentUnsafe(HealthComponent.class ).setValue(1); //breaks it
+		enemy.addComponent(new HealthComponent(Config.ENEMY_HEALTH));
 
 		Texture texture = assetLoader.loadTexture(Config.ENEMY)
 				.toStaticAnimatedTexture(2, Duration.seconds(2));
@@ -218,11 +219,11 @@ public final class EntityCreator
 
 	public static Entity newWall(double x, double y) {
 		GameEntity wall = new GameEntity();
+		//wall.addComponent(new HealthComponent(100));
 		wall.getTypeComponent().setValue(EntityType.WALL);
 		wall.getPositionComponent().setValue(x, y);
 		wall.getMainViewComponent().setView(new EntityView(assetLoader.loadTexture(Config.WALL_IMAGE)), true);
 		wall.addComponent(new CollidableComponent(true));
-		//wall.addComponent(new HPComponent(7));
 
 		return wall;
 	}
@@ -263,7 +264,7 @@ public final class EntityCreator
 		hit.setFitHeight(15);
 
 		laserHit.getMainViewComponent().setGraphics(hit);
-		//laserHit.addControl(new LaserHitControl());
+		laserHit.addControl(new LaserHitControl());
 
 		return laserHit;
 	}

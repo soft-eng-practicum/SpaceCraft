@@ -42,34 +42,35 @@ public class BulletEnemyHandler extends CollisionHandler
 			Point2D hitPosition = bullet.getComponentUnsafe(PositionComponent.class	).getValue();
 			bullet.removeFromWorld();
 
-//			HealthComponent health = enemy.getComponentUnsafe(HealthComponent.class);
-//			health.setValue(health.getValue() - 1);
-//
-//			if(health.getValue() <= 0)
-//			{
+			HealthComponent health = enemy.getComponentUnsafe(HealthComponent.class);
+			health.setValue(health.getValue() - 1);
+			
+			System.out.println(health + "The enemy's health");
+			if(health.getValue() <= 0)
+			{
 				Entity explosion = EntityCreator.newExplosion(Entities.getBBox(enemy).getCenterWorld());
 				enemy.getWorld().addEntity(explosion);
 
 				
-				enemy.getWorld().removeEntity(explosion);
-				System.out.println("Remove the explosion");
+//				enemy.getWorld().removeEntity(explosion);
+//				System.out.println("Remove the explosion");
 				enemy.removeFromWorld();
-//
-//				//GameApplication.getService(ServiceType.AUDIO_PLAYER).playSound("explosion.wav");
-//				//	GameApplication.getService(ServiceType.EVENT_BUS).fireEvent(new GameEvent(GameEvent.ENEMY_KILLED));
-//			} else {
-//				Entity laserHit = EntityCreator.newLaserHit(hitPosition);
-//
-//				enemy.getWorld().addEntity(laserHit);
-//
-//				enemy.getComponentUnsafe(MainViewComponent.class).getView().setBlendMode(BlendMode.RED);
-//
-//				GameApplication.getService(ServiceType.MASTER_TIMER)
-//				.runOnceAfter(() -> {
-//					if(enemy.isActive())
-//						enemy.getComponentUnsafe(MainViewComponent.class).getView().setBlendMode(null);
-//				}, Duration.seconds(0.33));
-//			}
+
+				//GameApplication.getService(ServiceType.AUDIO_PLAYER).playSound("explosion.wav");
+				//	GameApplication.getService(ServiceType.EVENT_BUS).fireEvent(new GameEvent(GameEvent.ENEMY_KILLED));
+			} else {
+				Entity laserHit = EntityCreator.newLaserHit(hitPosition);
+
+				enemy.getWorld().addEntity(laserHit);
+
+				enemy.getComponentUnsafe(MainViewComponent.class).getView().setBlendMode(BlendMode.RED);
+
+				GameApplication.getService(ServiceType.MASTER_TIMER)
+				.runOnceAfter(() -> {
+					if(enemy.isActive())
+						enemy.getComponentUnsafe(MainViewComponent.class).getView().setBlendMode(null);
+				}, Duration.seconds(0.33));
+			}
 		}catch (NullPointerException npe){
 
 		}
