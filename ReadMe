@@ -17,11 +17,11 @@ Basic Install Guide.
       Source Git Repository
           Location Settings
               URI:
-                https:github.comsoft-eng-practicumSpaceInvaders
+                https:github.comsoft-eng-practicum/SpaceCraft
               Host:
                 github.com
               Repositoryath: 
-                soft-eng-practicumSpaceInvaders
+                soft-eng-practicum/SpaceCraft
           Connection Settings
              Protocul
                 https
@@ -43,18 +43,18 @@ Basic Install Guide.
          import as an Existing Project
          use the working directery
          
-         'Choose your Preferred Save Location'/Spaceinvaders
+         'Choose your Preferred Save Location'/SpaceCraft
          
       import
             
         
         
 To launch the program:
-   Navigate to src/SpaceInvaders/SpaceInvadersApp.java in your
+   Navigate to src/SpaceCraft/SpaceCraftsApp.java in your
    preferred java IDE and run the program.
    
    
    
 If you find any issues with this, please post the issues under
 Issues on the GitHub Page. 
-   https://github.com/soft-eng-practicum/spaceinvaders/issues
+   https://github.com/soft-eng-practicum/SpaceCraft/issues
