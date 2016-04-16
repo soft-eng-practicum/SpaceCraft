@@ -142,6 +142,7 @@ public final class EntityCreator
 		player.getMainViewComponent().setView(new EntityView(texture), true);
 
 		player.addComponent(new CollidableComponent(true));
+		player.addComponent(new HealthComponent(Config.PLAYER_HEALTH));
 		//player.addComponent(new InvincibleComponent());
 		player.addControl(new PlayerControl());
 

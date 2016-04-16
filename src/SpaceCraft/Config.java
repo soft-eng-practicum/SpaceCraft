@@ -18,6 +18,7 @@ public final class Config
 	//Player Config Settings
 	public static final double PLAYER_ATTACK_SPEED = 50;
 	public static final double PLAYER_MOVE_SPEED = 500;
+	public static final int PLAYER_HEALTH = 20;
 	public static final int PLAYER_HEIGHT = 40;
 	public static final String SPACE_SHIP_IMAGE = "spaceshipReduced.png";
 
