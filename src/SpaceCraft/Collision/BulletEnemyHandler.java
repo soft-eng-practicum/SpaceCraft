@@ -45,7 +45,6 @@ public class BulletEnemyHandler extends CollisionHandler
 			HealthComponent health = enemy.getComponentUnsafe(HealthComponent.class);
 			health.setValue(health.getValue() - 1);
 			
-			System.out.println(health + "The enemy's health");
 			if(health.getValue() <= 0)
 			{
 				Entity explosion = EntityCreator.newExplosion(Entities.getBBox(enemy).getCenterWorld());

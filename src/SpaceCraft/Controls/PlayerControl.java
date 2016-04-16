@@ -54,19 +54,27 @@ public class PlayerControl extends AbstractControl
 	public void left()
 	{
 		if(position.getX() - dx >=0)
+		{
 			position.translateX(-dx);
+			System.out.println("Moved player to the left");
+		}
 	}
 
 	public void right()
 	{
 		if(position.getX() + bbox.getWidth() + dx <= Config.SCREEN_WIDTH)
+		{
 			position.translateX(dx);
+
+			System.out.println("Moved Player to the right");
+		}
 	}
 	public void shoot() {
 
 		if (!canShoot)
 			return;
 
+		System.out.println("Firing Lazer!");
 		canShoot = false;
 		lastTimeShot = timer.getNow();
 		Entity bullet = EntityCreator.newLaser(getEntity());

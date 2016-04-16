@@ -100,20 +100,17 @@ public class SpaceCraftsApp extends GameApplication
 	@OnUserAction(name = "Move Left", type = ActionType.ON_ACTION)
 	public void moveLeft() {
 		playerControl.left();
-		System.out.println("Moved player to the left");
 	}
 
 	@OnUserAction(name = "Move Right", type = ActionType.ON_ACTION)
 	public void moveRight() {
 		playerControl.right();
-		System.out.println("Moved Player to the right");
 	}
 
 	@OnUserAction(name = "Shoot", type = ActionType.ON_ACTION)
 	public void shoot(){
 		//implement shooting
 		playerControl.shoot(); 
-		System.out.println("Firing Lazer!");
 	}
 
 	@Override
