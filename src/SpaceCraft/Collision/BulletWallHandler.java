@@ -27,10 +27,10 @@ public class BulletWallHandler extends CollisionHandler
 		Point2D hitPosition = bullet.getComponentUnsafe(PositionComponent.class	).getValue();
 		bullet.removeFromWorld();
 
-//			HealthComponent health = wall.getComponentUnsafe(HealthComponent.class);
-//			health.setValue(health.getValue() - 1);
-//			if(health.getValue() == 0)
+			HealthComponent health = wall.getComponentUnsafe(HealthComponent.class);
+			health.setValue(health.getValue() - 1);
+			if(health.getValue() == 0)
 				wall.removeFromWorld();
-		//}
+	
 	}
 }

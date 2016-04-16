@@ -31,6 +31,7 @@ public final class Config
 	//Wall Config Settings
 	public static final int WALL_MIN_HEIGHT = 70 + PLAYER_HEIGHT;
 	public static final String WALL_IMAGE = "wall.png";
+	public static final int WALL_HEALTH = 10;
 
 
 	//Image Config Settings

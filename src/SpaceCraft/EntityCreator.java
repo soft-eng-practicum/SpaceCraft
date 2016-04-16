@@ -219,7 +219,7 @@ public final class EntityCreator
 
 	public static Entity newWall(double x, double y) {
 		GameEntity wall = new GameEntity();
-		//wall.addComponent(new HealthComponent(100));
+		wall.addComponent(new HealthComponent(Config.WALL_HEALTH));
 		wall.getTypeComponent().setValue(EntityType.WALL);
 		wall.getPositionComponent().setValue(x, y);
 		wall.getMainViewComponent().setView(new EntityView(assetLoader.loadTexture(Config.WALL_IMAGE)), true);
