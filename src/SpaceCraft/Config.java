@@ -24,8 +24,9 @@ public final class Config
 
 	//Enemy Config Settings
 
-	public static final String ENEMY_IMAGE = "enemyReduced.png";
+	public static final String ENEMY_IMAGE = "enemyReduced1.png"; //need to array 1-3
 	public static final int ENEMY_HEALTH = 5;
+	
 	//Bullet Config Settings
 	public static final double BULLET_MOVE_SPEED = 500;
 
@@ -36,17 +37,9 @@ public final class Config
 
 
 	//Image Config Settings
-	////mainly in the EntityCreator
-	
-	public static final String ENEMY = "enemyReduced"
-			//+ ((int)(Math.random() * 3) + 1) 
-			+ 1 //This line is temp
-			+ ".png";
 
-	public static final String LAZER_IMAGE = "bullet_red.png";
-	public static final String BULLET_IMAGE = "tank_bullet.png";
-	public static final String BONUS_LIFE_IMAGE = "life.png";
-	public static final String LAZER_HIT_IMAGE = "lazer_hit.png";
+
+
 	
 	//explosion settings
 	////Enemy Exxplosion
@@ -54,6 +47,15 @@ public final class Config
 	public static final String EXPLOSION_IMAGE = "explosion.png";
 	public static final int EXPLOSION_IMAGE_SLICES = 50;
 	public static final double EXPLOSION_IMAGE_PLAY_TIME = .5; //in seconds
+	
+	
+	
+	//MISC Image files
+	public static final String LAZER_IMAGE = "bullet_red.png";
+	public static final String BULLET_IMAGE = "tank_bullet.png";
+	public static final String BONUS_LIFE_IMAGE = "life.png";
+	public static final String LAZER_HIT_IMAGE = "lazer_hit.png";
+	public static final String METEOR_IMAGE = "meteor1.png"; //will need 1-4 in an array
 	
 
 

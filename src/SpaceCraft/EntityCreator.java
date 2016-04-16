@@ -32,6 +32,11 @@ import javafx.util.Duration;
 
 public final class EntityCreator
 {
+
+	private static final AssetLoader assetLoader = GameApplication.getService(ServiceType.ASSET_LOADER);
+
+	private static final Random rand = new Random();
+	
 	public enum EntityType
 	{
 		PLAYER, ENEMY, BULLET, WALL, BONUS;
@@ -60,14 +65,11 @@ public final class EntityCreator
 
 	}
 
-	private static final AssetLoader assetLoader = GameApplication.getService(ServiceType.ASSET_LOADER);
-
-	private static final Random rand = new Random();
 
 	public static Entity newBackground(double w, double h) 
 	{
 		GameEntity bg = new GameEntity();
-		Texture bgTexture = assetLoader.loadTexture("textures/text.png");
+		Texture bgTexture = assetLoader.loadTexture("text.png");
 		bgTexture.setFitWidth(w);
 		bgTexture.setFitHeight(h);
 
@@ -114,7 +116,7 @@ public final class EntityCreator
 		GameEntity meteor = new GameEntity();
 		meteor.getPositionComponent().setValue(x, y);
 
-		String textureName = "background/meteor" + (rand.nextInt(4) + 1) + ".png";
+		String textureName = Config.METEOR_IMAGE;
 
 		meteor.getMainViewComponent().setTexture(textureName);
 		meteor.getMainViewComponent().setRenderLayer(RenderLayer.METEORS);
@@ -155,7 +157,7 @@ public final class EntityCreator
 		enemy.getPositionComponent().setValue(x, y);
 		enemy.addComponent(new HealthComponent(Config.ENEMY_HEALTH));
 
-		Texture texture = assetLoader.loadTexture(Config.ENEMY)
+		Texture texture = assetLoader.loadTexture(Config.ENEMY_IMAGE)
 				.toStaticAnimatedTexture(2, Duration.seconds(2));
 				
 
