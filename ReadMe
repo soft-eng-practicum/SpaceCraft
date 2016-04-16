@@ -1,7 +1,7 @@
 Basic Install Guide. 
    
   Welcome! This is a basic document on how to install 
-  The filesroperly to Eciplse. 
+  The files properly to Eciplse. 
   
   Prereqs: 
       Windows (Mac fix is on the way.)
@@ -10,7 +10,7 @@ Basic Install Guide.
   Install Instructions 
       open Eclipse Mars
       Begin Importing 
-      Got to File, import
+      Go to File, import
       Git 
          Projects from Git.
       Clone URI
@@ -20,10 +20,10 @@ Basic Install Guide.
                 https:github.comsoft-eng-practicum/SpaceCraft
               Host:
                 github.com
-              Repositoryath: 
+              Repository path: 
                 soft-eng-practicum/SpaceCraft
           Connection Settings
-             Protocul
+             Protocol
                 https
              Port:
               null (Leave it blank)
@@ -35,7 +35,7 @@ Basic Install Guide.
       Select Master
       
       Choose your Preferred Save Location 
-        Import as Generalroject
+        Import as General Project
         
         
         
