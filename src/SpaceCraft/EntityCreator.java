@@ -244,12 +244,12 @@ public final class EntityCreator
 		GameEntity explosion = new GameEntity();
 		explosion.getPositionComponent().setValue(position.subtract(40, 40));
 
-		Texture animation = assetLoader.loadTexture(Config.EXPLOSION_IMAGE).toStaticAnimatedTexture(48, Duration.seconds(2));
+		Texture animation = assetLoader.loadTexture(Config.EXPLOSION_IMAGE).toStaticAnimatedTexture(Config.EXPLOSION_IMAGE_SLICES, Duration.seconds(Config.EXPLOSION_IMAGE_PLAY_TIME));
 		animation.setFitWidth(80);
 		animation.setFitHeight(80);
 
 		explosion.getMainViewComponent().setGraphics(animation);
-		explosion.addControl(new ExpireCleanControl(Duration.seconds(1.9)));
+		explosion.addControl(new ExpireCleanControl(Duration.seconds(Config.EXPLOSION_IMAGE_PLAY_TIME)));
 
 		return explosion;
 	}

@@ -40,10 +40,15 @@ public final class Config
 	public static final String LAZER_IMAGE = "bullet_red.png";
 	public static final String BULLET_IMAGE = "tank_bullet.png";
 	public static final String BONUS_LIFE_IMAGE = "life.png";
-	public static final String EXPLOSION_IMAGE = "explosion.png";
 	public static final String LAZER_HIT_IMAGE = "lazer_hit.png";
 	public static final String ENEMY_IMAGE = "enemyReduced.png";
 	
+	//explosion settings
+	////Enemy
+
+	public static final String EXPLOSION_IMAGE = "explosion.png";
+	public static final int EXPLOSION_IMAGE_SLICES = 50;
+	public static final double EXPLOSION_IMAGE_PLAY_TIME = .5; //in seconds
 	
 
 
