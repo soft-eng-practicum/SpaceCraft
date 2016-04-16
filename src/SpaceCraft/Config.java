@@ -16,8 +16,8 @@ public final class Config
 	public static final int	SCREEN_HEIGHT = 600; //made height shorter so it can show on my screen. 
 
 	//Player Config Settings
-	public static final double PLAYER_ATTACK_SPEED = 5;
-	public static final double PLAYER_MOVE_SPEED = 50;
+	public static final double PLAYER_ATTACK_SPEED = 50;
+	public static final double PLAYER_MOVE_SPEED = 500;
 	public static final int PLAYER_HEIGHT = 40;
 	public static final String SPACE_SHIP_IMAGE = "spaceshipReduced.png";
 
