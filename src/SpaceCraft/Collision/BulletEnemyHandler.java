@@ -47,11 +47,13 @@ public class BulletEnemyHandler extends CollisionHandler
 //
 //			if(health.getValue() <= 0)
 //			{
-//				Entity explosion = EntityCreator.newExplosion(Entities.getBBox(enemy).getCenterWorld());
-//				enemy.getWorld().addEntity(explosion);
+				Entity explosion = EntityCreator.newExplosion(Entities.getBBox(enemy).getCenterWorld());
+				enemy.getWorld().addEntity(explosion);
 
+				
+				enemy.getWorld().removeEntity(explosion);
+				System.out.println("Remove the explosion");
 				enemy.removeFromWorld();
-
 //
 //				//GameApplication.getService(ServiceType.AUDIO_PLAYER).playSound("explosion.wav");
 //				//	GameApplication.getService(ServiceType.EVENT_BUS).fireEvent(new GameEvent(GameEvent.ENEMY_KILLED));

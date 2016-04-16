@@ -12,10 +12,12 @@ import com.almasb.fxgl.entity.Entities;
 import com.almasb.fxgl.entity.EntityView;
 import com.almasb.fxgl.entity.GameEntity;
 import com.almasb.fxgl.entity.component.CollidableComponent;
+import com.almasb.fxgl.entity.control.ExpireCleanControl;
 import com.almasb.fxgl.entity.control.OffscreenCleanControl;
 import com.almasb.fxgl.entity.control.ProjectileControl;
 import com.almasb.fxgl.physics.HitBox;
 
+import SpaceCraft.Components.HealthComponent;
 import SpaceCraft.Components.OwnerComponent;
 import SpaceCraft.Controls.BulletControl;
 import SpaceCraft.Controls.MeteorControl;
@@ -149,6 +151,7 @@ public final class EntityCreator
 		GameEntity enemy = new GameEntity();
 		enemy.getTypeComponent().setValue(EntityType.ENEMY);
 		enemy.getPositionComponent().setValue(x, y);
+//		enemy.getComponentUnsafe(HealthComponent.class ).setValue(1); //breaks it
 
 		Texture texture = assetLoader.loadTexture(Config.ENEMY)
 				.toStaticAnimatedTexture(2, Duration.seconds(2));
@@ -246,7 +249,7 @@ public final class EntityCreator
 		animation.setFitHeight(80);
 
 		explosion.getMainViewComponent().setGraphics(animation);
-		//explosion.addControl(new ExpireCleanControl(Duration.seconds(1.8)));
+		explosion.addControl(new ExpireCleanControl(Duration.seconds(1.9)));
 
 		return explosion;
 	}
