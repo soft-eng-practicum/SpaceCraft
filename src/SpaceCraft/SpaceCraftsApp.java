@@ -138,6 +138,7 @@ public class SpaceCraftsApp extends GameApplication
 
 	}
 	
+	
 	private void spawnBackground()
 	{
 		Entity bg = EntityCreator.newBackground(getWidth(), getHeight());
@@ -179,13 +180,14 @@ public class SpaceCraftsApp extends GameApplication
 		}
 
 		
+		//spawning walls,
+		//will spawn based on the width of the screen.
 		
-		
-		spawnWall(40, getHeight() - Config.WALL_MIN_HEIGHT);
-		spawnWall(120, getHeight() - Config.WALL_MIN_HEIGHT);
-
-		spawnWall(getWidth() - 160, getHeight() - Config.WALL_MIN_HEIGHT);
-		spawnWall(getWidth() - 80, getHeight() - Config.WALL_MIN_HEIGHT);
+		int wallSpacing = (int) ( (getWidth() - (Config.WALL_MIN_WIDTH * Config.WALLS_NUMBER_ON_LOAD) ) / Config.WALLS_NUMBER_ON_LOAD);		
+		for (int i = 0; i <  Config.WALLS_NUMBER_ON_LOAD; i++)
+		{
+			spawnWall(((wallSpacing + Config.WALL_MIN_WIDTH) * i) + (int) wallSpacing/2, getHeight() - Config.WALL_MIN_HEIGHT);
+		}
 
 		//getInput().setProcessInput(true);
 	}

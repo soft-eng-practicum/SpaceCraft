@@ -29,11 +29,15 @@ public final class Config
 	
 	//Bullet Config Settings
 	public static final double BULLET_MOVE_SPEED = 500;
+	public static final int BULLET_HEIGHT = 12; //12 pixels
+	public static final int BULLET_WIDTH = 12; //12 pixels
 
 	//Wall Config Settings
-	public static final int WALL_MIN_HEIGHT = 70 + PLAYER_HEIGHT;
+	public static final int WALL_MIN_HEIGHT = 64 + PLAYER_HEIGHT;
+	public static final int WALL_MIN_WIDTH = 64;
 	public static final String WALL_IMAGE = "wall.png";
 	public static final int WALL_HEALTH = 10;
+	public static final int WALLS_NUMBER_ON_LOAD = 5; //we can adjust now
 
 
 	//Image Config Settings
