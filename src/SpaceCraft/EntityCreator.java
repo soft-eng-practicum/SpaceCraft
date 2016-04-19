@@ -160,7 +160,7 @@ public final class EntityCreator
 		String enemyTexture;
 		if(Config.ENEMIES_RANDOMIZE)
 		{
-			enemyTexture = Config.ENEMY_IMAGE_ARRAY[new Random().nextInt(3)];
+			enemyTexture = Config.ENEMY_IMAGE_ARRAY[rand.nextInt(3)];
 		}
 		else 
 		{

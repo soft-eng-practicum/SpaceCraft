@@ -40,6 +40,7 @@ public final class Config
 	public static final int WALL_MIN_HEIGHT = 64 + PLAYER_HEIGHT;
 	public static final int WALL_MIN_WIDTH = 64;
 	public static final String WALL_IMAGE = "wall.png";
+	public static final String[] WALL_IMAGE_ARRAY = {"wall.png", "wall2.png", "wall3.png", "wall4.png"};
 	public static final int WALL_HEALTH = 3;
 	public static final int WALLS_NUMBER_ON_LOAD = 5; //we can adjust now
 
