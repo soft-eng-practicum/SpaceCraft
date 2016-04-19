@@ -157,8 +157,17 @@ public final class EntityCreator
 		enemy.getPositionComponent().setValue(x, y);
 		enemy.addComponent(new HealthComponent(Config.ENEMY_HEALTH));
 
-		Texture texture = assetLoader.loadTexture(Config.ENEMY_IMAGE)
-				.toStaticAnimatedTexture(2, Duration.seconds(2));
+		String enemyTexture;
+		if(Config.ENEMIES_RANDOMIZE)
+		{
+			enemyTexture = Config.ENEMY_IMAGE_ARRAY[new Random().nextInt(3)];
+		}
+		else 
+		{
+			enemyTexture =  Config.ENEMY_IMAGE;
+		}
+		Texture texture = assetLoader.loadTexture(enemyTexture)
+				.toStaticAnimatedTexture(Config.ENEMY_IMAGE_SLICES, Duration.seconds(Config.ENEMY_IMAGE_PLAY_TIME));
 				
 
 		enemy.getMainViewComponent().setView(new EntityView(texture), true);
@@ -167,6 +176,9 @@ public final class EntityCreator
 
 		return enemy;
 	}
+	
+	
+	
 
 	public static Entity newBullet(Entity owner) {
 		GameEntity bullet = new GameEntity();

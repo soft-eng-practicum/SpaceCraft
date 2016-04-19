@@ -25,7 +25,11 @@ public final class Config
 	//Enemy Config Settings
 
 	public static final String ENEMY_IMAGE = "enemyReduced1.png"; //need to array 1-3
-	public static final int ENEMY_HEALTH = 5;
+	public static final String[] ENEMY_IMAGE_ARRAY = {"enemyReduced1.png","enemyReduced2.png","enemyReduced3.png"};
+	public static final int ENEMY_IMAGE_SLICES = 2; 
+	public static final double ENEMY_IMAGE_PLAY_TIME = 2; //in seconds
+	public static final boolean ENEMIES_RANDOMIZE = true; //if you want to randomize enemies or not 
+	public static final int ENEMY_HEALTH = 2;
 	
 	//Bullet Config Settings
 	public static final double BULLET_MOVE_SPEED = 500;
@@ -36,7 +40,7 @@ public final class Config
 	public static final int WALL_MIN_HEIGHT = 64 + PLAYER_HEIGHT;
 	public static final int WALL_MIN_WIDTH = 64;
 	public static final String WALL_IMAGE = "wall.png";
-	public static final int WALL_HEALTH = 10;
+	public static final int WALL_HEALTH = 3;
 	public static final int WALLS_NUMBER_ON_LOAD = 5; //we can adjust now
 
 
