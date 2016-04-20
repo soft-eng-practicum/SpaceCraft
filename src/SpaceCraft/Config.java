@@ -1,5 +1,9 @@
 package SpaceCraft;
 
+import com.almasb.fxgl.app.GameApplication;
+import com.almasb.fxgl.app.ServiceType;
+import com.almasb.fxgl.asset.AssetLoader;
+
 public final class Config
 {
 
@@ -14,10 +18,13 @@ public final class Config
 	//Height, Width of App
 	public static final int SCREEN_WIDTH = 480;
 	public static final int	SCREEN_HEIGHT = 600; //made height shorter so it can show on my screen. 
+	
+	//Asset Loader
+	public static final AssetLoader ASSET_LOADER = GameApplication.getService(ServiceType.ASSET_LOADER);
 
 	//Player Config Settings
-	public static final double PLAYER_ATTACK_SPEED = 50;
-	public static final double PLAYER_MOVE_SPEED = 500;
+	public static final double PLAYER_ATTACK_SPEED = 4;
+	public static final double PLAYER_MOVE_SPEED = 50;
 	public static final int PLAYER_HEALTH = 20;
 	public static final int PLAYER_HEIGHT = 40;
 	public static final String SPACE_SHIP_IMAGE = "spaceshipReduced.png";
@@ -29,7 +36,7 @@ public final class Config
 	public static final int ENEMY_IMAGE_SLICES = 2; 
 	public static final double ENEMY_IMAGE_PLAY_TIME = 2; //in seconds
 	public static final boolean ENEMIES_RANDOMIZE = true; //if you want to randomize enemies or not 
-	public static final int ENEMY_HEALTH = 2;
+	public static final int ENEMY_HEALTH = 4;
 	
 	//Bullet Config Settings
 	public static final double BULLET_MOVE_SPEED = 500;
@@ -41,7 +48,7 @@ public final class Config
 	public static final int WALL_MIN_WIDTH = 64;
 	public static final String WALL_IMAGE = "wall.png";
 	public static final String[] WALL_IMAGE_ARRAY = {"wall.png", "wall2.png", "wall3.png", "wall4.png"};
-	public static final int WALL_HEALTH = 3;
+	public static final int WALL_HEALTH = 5;
 	public static final int WALLS_NUMBER_ON_LOAD = 5; //we can adjust now
 
 

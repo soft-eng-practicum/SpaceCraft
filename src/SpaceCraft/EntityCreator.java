@@ -33,7 +33,7 @@ import javafx.util.Duration;
 public final class EntityCreator
 {
 
-	private static final AssetLoader assetLoader = GameApplication.getService(ServiceType.ASSET_LOADER);
+	private static final AssetLoader assetLoader = Config.ASSET_LOADER; //this is here for error preventage
 
 	private static final Random rand = new Random();
 	
@@ -237,7 +237,10 @@ public final class EntityCreator
 		wall.addComponent(new HealthComponent(Config.WALL_HEALTH));
 		wall.getTypeComponent().setValue(EntityType.WALL);
 		wall.getPositionComponent().setValue(x, y);
-		wall.getMainViewComponent().setView(new EntityView(assetLoader.loadTexture(Config.WALL_IMAGE)), true);
+		if(Config.WALL_HEALTH < Config.WALL_IMAGE_ARRAY.length)
+			wall.getMainViewComponent().setView(new EntityView(assetLoader.loadTexture(Config.WALL_IMAGE_ARRAY[Config.WALL_IMAGE_ARRAY.length - Config.WALL_HEALTH])), true);
+		else
+			wall.getMainViewComponent().setView(new EntityView(assetLoader.loadTexture(Config.WALL_IMAGE)), true);
 		wall.addComponent(new CollidableComponent(true));
 
 		return wall;
