@@ -8,6 +8,7 @@ import com.almasb.fxgl.audio.AudioPlayer;
 import com.almasb.fxgl.entity.component.PositionComponent;
 import com.almasb.fxgl.time.LocalTimer;
 
+import SpaceCraft.Config;
 import SpaceCraft.EntityCreator;
 import javafx.util.Duration;
 
@@ -37,21 +38,21 @@ public class EnemyControl extends AbstractControl {
     public void onUpdate(Entity entity, double tpf) {
         PositionComponent positionComponent = entity.getComponentUnsafe(PositionComponent.class);
 
-        if (hTimer.elapsed(Duration.seconds(2))) {
+        if (hTimer.elapsed(Duration.seconds(Config.ENEMY_MOVEMENT_H_TIMER))) {
             movingRight = !movingRight;
             hTimer.capture();
         }
 
-        if (vTimer.elapsed(Duration.seconds(6))) {
+        if (vTimer.elapsed(Duration.seconds(Config.ENEMY_MOVEMENT_V_TIMER))) {
             positionComponent.translateY(20);
             vTimer.capture();
         }
 
         if (attackTimer.elapsed(nextAttack)) {
-            if (Math.random() < 0.3) {
+            if (Math.random() < Config.ENEMY_SHOOT_CHANCE) {
                 shoot();
             }
-            nextAttack = Duration.seconds(5 * Math.random());
+            nextAttack = Duration.seconds(Config.ENEMY_SUDORAN_SHOOT_SPEED * Math.random());
             attackTimer.capture();
         }
 

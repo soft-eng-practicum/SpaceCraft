@@ -28,6 +28,7 @@ public final class Config
 	public static final int PLAYER_HEALTH = 20;
 	public static final int PLAYER_HEIGHT = 40;
 	public static final String SPACE_SHIP_IMAGE = "spaceshipReduced.png";
+	public static final boolean PLAYER_IMMUNE = true;
 
 	//Enemy Config Settings
 
@@ -41,6 +42,11 @@ public final class Config
 	public static final int ENEMY_ROW_COUNT_ONLOAD = 5;
 	public static final double ENEMY_IMAGE_PLAY_TIME = 2; //in seconds
 	public static final boolean ENEMIES_RANDOMIZE = false; //if you want to randomize enemies or not 
+
+	public static final double ENEMY_SUDORAN_SHOOT_SPEED = 5;
+	public static final double ENEMY_SHOOT_CHANCE = .3;
+	public static final double ENEMY_MOVEMENT_H_TIMER = .25;
+	public static final double ENEMY_MOVEMENT_V_TIMER = 1;
 	
 	//Bullet Config Settings
 	public static final double BULLET_MOVE_SPEED = 500;

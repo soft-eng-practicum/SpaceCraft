@@ -37,7 +37,7 @@ public class BulletWallHandler extends CollisionHandler
 		HealthComponent health = wall.getComponentUnsafe(HealthComponent.class);
 		health.setValue(health.getValue() - 1);
 
-		
+
 		if(health.getValue() == 0)
 			wall.removeFromWorld();
 		else
@@ -53,32 +53,39 @@ public class BulletWallHandler extends CollisionHandler
 			{
 				if(health.getValue() < (healthPerImage * i))
 				{
-					wall.getComponentUnsafe(
-							MainViewComponent.class).setView(
-									new EntityView(
-											GameApplication.getService(
-													ServiceType.ASSET_LOADER).loadTexture(
-															Config.WALL_IMAGE_ARRAY[Config.WALL_IMAGE_ARRAY.length - i + 1]
-															)
-											)
-									, true);
+					try
+					{
+
+						wall.getComponentUnsafe(
+								MainViewComponent.class).setView(
+										new EntityView(
+												GameApplication.getService(
+														ServiceType.ASSET_LOADER).loadTexture(
+																Config.WALL_IMAGE_ARRAY[Config.WALL_IMAGE_ARRAY.length - i + 1]
+																)
+												)
+										, true);
+					} catch (NullPointerException e)
+					{
+						//here to catch two bullets hitting wall at the same time
+					}
 				} 
 				//I want to change the wallimage here by wall.setImage(Config.Wall_IMAGE_ARRAY[i-1]);
 				//it is not .setImage, I am unsure how to do this.
 
 			}
-//
-//			Entity laserHit = EntityCreator.newLaserHit(hitPosition);
-//
-//			wall.getWorld().addEntity(laserHit);
-//
-//			wall.getComponentUnsafe(MainViewComponent.class).getView().setBlendMode(BlendMode.RED);
-//
-//			GameApplication.getService(ServiceType.MASTER_TIMER)
-//			.runOnceAfter(() -> {
-//				if(wall.isActive())
-//					wall.getComponentUnsafe(MainViewComponent.class).getView().setBlendMode(null);
-//			}, Duration.seconds(0.33));
+			//
+			//			Entity laserHit = EntityCreator.newLaserHit(hitPosition);
+			//
+			//			wall.getWorld().addEntity(laserHit);
+			//
+			//			wall.getComponentUnsafe(MainViewComponent.class).getView().setBlendMode(BlendMode.RED);
+			//
+			//			GameApplication.getService(ServiceType.MASTER_TIMER)
+			//			.runOnceAfter(() -> {
+			//				if(wall.isActive())
+			//					wall.getComponentUnsafe(MainViewComponent.class).getView().setBlendMode(null);
+			//			}, Duration.seconds(0.33));
 		}
 	}
 }

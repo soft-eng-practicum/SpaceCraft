@@ -24,6 +24,7 @@ public class BulletPlayerHandler extends CollisionHandler
 		Object owner = bullet.getComponentUnsafe(OwnerComponent.class).getValue();
 		
 		// player shoots the bullet so no need to handle collision if hit by own bullet.
+		//or if the player is immune
 		if (owner == EntityCreator.EntityType.PLAYER 
 				|| player.getComponentUnsafe(ImmuneComponent.class).getValue())
 		{

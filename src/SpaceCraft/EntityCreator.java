@@ -147,7 +147,7 @@ public final class EntityCreator
 
 		player.addComponent(new CollidableComponent(true));
 		player.addComponent(new HealthComponent(Config.PLAYER_HEALTH));
-		player.addComponent(new ImmuneComponent());
+		player.addComponent(new ImmuneComponent(Config.PLAYER_IMMUNE));
 		player.addControl(new PlayerControl());
 
 		return player;

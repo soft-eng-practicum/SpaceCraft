@@ -8,4 +8,12 @@ public class ImmuneComponent extends BooleanComponent
 	{
 		super(false);
 	}
+
+	/**
+	 * @param playerImmune
+	 */
+	public ImmuneComponent(boolean playerImmune)
+	{
+		super(playerImmune);
+	}
 }
