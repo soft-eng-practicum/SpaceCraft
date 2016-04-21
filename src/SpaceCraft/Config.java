@@ -23,12 +23,12 @@ public final class Config
 	public static final AssetLoader ASSET_LOADER = GameApplication.getService(ServiceType.ASSET_LOADER);
 
 	//Player Config Settings
-	public static final double PLAYER_ATTACK_SPEED = 4;
-	public static final double PLAYER_MOVE_SPEED = 50;
-	public static final int PLAYER_HEALTH = 20;
+	public static final double PLAYER_ATTACK_SPEED = 40;
+	public static final double PLAYER_MOVE_SPEED = 500;
+	public static final int PLAYER_HEALTH = 10;
 	public static final int PLAYER_HEIGHT = 40;
 	public static final String SPACE_SHIP_IMAGE = "spaceshipReduced.png";
-	public static final boolean PLAYER_IMMUNE = true;
+	public static final boolean PLAYER_IMMUNE = false;
 
 	//Enemy Config Settings
 

@@ -48,13 +48,13 @@ public class BulletWallHandler extends CollisionHandler
 
 			if(healthPerImage < 1)
 				healthPerImage = 1;
-
-			for (int i = numOfWallImages; i > 0; i--)
+			try
 			{
-				if(health.getValue() < (healthPerImage * i))
+				for (int i = numOfWallImages; i > 0; i--)
 				{
-					try
+					if(health.getValue() < (healthPerImage * i))
 					{
+
 
 						wall.getComponentUnsafe(
 								MainViewComponent.class).setView(
@@ -65,14 +65,16 @@ public class BulletWallHandler extends CollisionHandler
 																)
 												)
 										, true);
-					} catch (NullPointerException e)
-					{
-						//here to catch two bullets hitting wall at the same time
-					}
-				} 
-				//I want to change the wallimage here by wall.setImage(Config.Wall_IMAGE_ARRAY[i-1]);
-				//it is not .setImage, I am unsure how to do this.
 
+					} 
+					//I want to change the wallimage here by wall.setImage(Config.Wall_IMAGE_ARRAY[i-1]);
+					//it is not .setImage, I am unsure how to do this.
+
+				}
+			} catch (NullPointerException e)
+			{
+				//here to catch two bullets hitting wall at the same time
+				wall.removeFromWorld();
 			}
 			//
 			//			Entity laserHit = EntityCreator.newLaserHit(hitPosition);
