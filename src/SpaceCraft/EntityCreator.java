@@ -18,8 +18,10 @@ import com.almasb.fxgl.entity.control.ProjectileControl;
 import com.almasb.fxgl.physics.HitBox;
 
 import SpaceCraft.Components.HealthComponent;
+import SpaceCraft.Components.ImmuneComponent;
 import SpaceCraft.Components.OwnerComponent;
 import SpaceCraft.Controls.BulletControl;
+import SpaceCraft.Controls.EnemyControl;
 import SpaceCraft.Controls.LaserHitControl;
 import SpaceCraft.Controls.MeteorControl;
 import SpaceCraft.Controls.PlayerControl;
@@ -145,7 +147,7 @@ public final class EntityCreator
 
 		player.addComponent(new CollidableComponent(true));
 		player.addComponent(new HealthComponent(Config.PLAYER_HEALTH));
-		//player.addComponent(new InvincibleComponent());
+		player.addComponent(new ImmuneComponent());
 		player.addControl(new PlayerControl());
 
 		return player;
@@ -156,6 +158,8 @@ public final class EntityCreator
 		enemy.getTypeComponent().setValue(EntityType.ENEMY);
 		enemy.getPositionComponent().setValue(x, y);
 		enemy.addComponent(new HealthComponent(Config.ENEMY_HEALTH));
+		enemy.addControl(new EnemyControl());
+		
 
 		String enemyTexture;
 		if(Config.ENEMIES_RANDOMIZE)
@@ -166,8 +170,7 @@ public final class EntityCreator
 		{
 			enemyTexture =  Config.ENEMY_IMAGE;
 		}
-		Texture texture = assetLoader.loadTexture(enemyTexture)
-				.toStaticAnimatedTexture(Config.ENEMY_IMAGE_SLICES, Duration.seconds(Config.ENEMY_IMAGE_PLAY_TIME));
+		Texture texture = assetLoader.loadTexture(enemyTexture);				//.toStaticAnimatedTexture(Config.ENEMY_IMAGE_SLICES, Duration.seconds(Config.ENEMY_IMAGE_PLAY_TIME));
 				
 
 		enemy.getMainViewComponent().setView(new EntityView(texture), true);

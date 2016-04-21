@@ -31,7 +31,7 @@ public final class Config
 
 	//Enemy Config Settings
 
-	public static final String ENEMY_IMAGE = "enemyReduced1.png"; //need to array 1-3
+	public static final String ENEMY_IMAGE = "enemyReduced.png"; //need to array 1-3
 	public static final String[] ENEMY_IMAGE_ARRAY = {"enemyReduced1.png","enemyReduced2.png","enemyReduced3.png"};
 	public static final int ENEMY_IMAGE_SLICES = 2; 
 	public static final int ENEMY_HEALTH = 4;
@@ -40,7 +40,7 @@ public final class Config
 	public static final int ENEMY_COLLUNM_COUNT_ONLOAD = 8;
 	public static final int ENEMY_ROW_COUNT_ONLOAD = 5;
 	public static final double ENEMY_IMAGE_PLAY_TIME = 2; //in seconds
-	public static final boolean ENEMIES_RANDOMIZE = true; //if you want to randomize enemies or not 
+	public static final boolean ENEMIES_RANDOMIZE = false; //if you want to randomize enemies or not 
 	
 	//Bullet Config Settings
 	public static final double BULLET_MOVE_SPEED = 500;
@@ -76,6 +76,9 @@ public final class Config
 	public static final String BONUS_LIFE_IMAGE = "life.png";
 	public static final String LAZER_HIT_IMAGE = "lazer_hit.png";
 	public static final String METEOR_IMAGE = "meteor1.png"; //will need 1-4 in an array
+	
+	//NEW ITEMS, ORGANIZE ALL BELOW THIS LINE
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 
 

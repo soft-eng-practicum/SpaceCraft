@@ -17,7 +17,7 @@ public class EnemyControl extends AbstractControl {
     private LocalTimer attackTimer;
     private Duration nextAttack = Duration.seconds(2);
 
-    private boolean movingRight = true;
+    private boolean movingRight = false;
 
     private AudioPlayer audioPlayer;
 
@@ -63,7 +63,7 @@ public class EnemyControl extends AbstractControl {
 
         getEntity().getWorld().addEntity(bullet);
 
-        audioPlayer.playSound("shoot" + (int)(Math.random() * 4 + 1) + ".wav");
+        //audioPlayer.playSound("shoot" + (int)(Math.random() * 4 + 1) + ".wav");
     }
 }
 
