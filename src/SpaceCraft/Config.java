@@ -34,9 +34,13 @@ public final class Config
 	public static final String ENEMY_IMAGE = "enemyReduced1.png"; //need to array 1-3
 	public static final String[] ENEMY_IMAGE_ARRAY = {"enemyReduced1.png","enemyReduced2.png","enemyReduced3.png"};
 	public static final int ENEMY_IMAGE_SLICES = 2; 
+	public static final int ENEMY_HEALTH = 4;
+	public static final int ENEMY_HEIGHT = 30;
+	public static final int ENEMY_WIDTH = (int) 100 / ENEMY_IMAGE_SLICES;
+	public static final int ENEMY_COLLUNM_COUNT_ONLOAD = 8;
+	public static final int ENEMY_ROW_COUNT_ONLOAD = 5;
 	public static final double ENEMY_IMAGE_PLAY_TIME = 2; //in seconds
 	public static final boolean ENEMIES_RANDOMIZE = true; //if you want to randomize enemies or not 
-	public static final int ENEMY_HEALTH = 4;
 	
 	//Bullet Config Settings
 	public static final double BULLET_MOVE_SPEED = 500;

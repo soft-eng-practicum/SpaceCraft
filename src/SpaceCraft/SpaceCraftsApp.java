@@ -40,8 +40,8 @@ public class SpaceCraftsApp extends GameApplication
 
 	//private GameController uiController;
 
-	
-	
+
+
 	/*
 	 * Starts 
 	 */
@@ -49,7 +49,7 @@ public class SpaceCraftsApp extends GameApplication
 	protected void initSettings(GameSettings settings)
 	{
 
-	
+
 
 		settings.setTitle("SpaceCraft v1.1");
 		//Fixed the display of the game window for better viewing -- XL
@@ -118,8 +118,8 @@ public class SpaceCraftsApp extends GameApplication
 	{
 		PhysicsWorld worldPhysics = getPhysicsWorld();
 		worldPhysics.addCollisionHandler(new BulletPlayerHandler());
-        worldPhysics.addCollisionHandler(new BulletEnemyHandler());
-        worldPhysics.addCollisionHandler(new BulletWallHandler());
+		worldPhysics.addCollisionHandler(new BulletEnemyHandler());
+		worldPhysics.addCollisionHandler(new BulletWallHandler());
 	}
 
 	@Override
@@ -137,18 +137,18 @@ public class SpaceCraftsApp extends GameApplication
 
 
 	}
-	
-	
+
+
 	private void spawnBackground()
 	{
 		Entity bg = EntityCreator.newBackground(getWidth(), getHeight());
-		
+
 		getGameWorld().addEntity(bg);
-		
+
 		getMasterTimer().runAtInterval(() -> {
-				Entity meteor = EntityCreator.newMeteor();
-				
-				getGameWorld().addEntity(meteor);
+			Entity meteor = EntityCreator.newMeteor();
+
+			getGameWorld().addEntity(meteor);
 		}, Duration.seconds(3));
 	}
 
@@ -158,7 +158,7 @@ public class SpaceCraftsApp extends GameApplication
 		Entity enemy = EntityCreator.newEnemy(x, y);
 		//enemy.setSceneView();
 		//enemy.setCollidable(true);
-				
+
 		//added the texture for the enemies, and set dimension -- XL
 		//Texture txtr = getAssetLoader().loadTexture(Config.ENEMY_IMAGE);
 		//txtr.setFitWidth(40);
@@ -171,18 +171,24 @@ public class SpaceCraftsApp extends GameApplication
 		getGameWorld().addEntity(EntityCreator.newWall(x, y));
 	}
 	private void initLevel() {
-		
+
 		//it is in the spawning. Will try to make based on Screen_Width
-		for (int y = 0; y < 5; y++) {
-			for (int x = 0; x < 8; x++) {
-				spawnEnemies(x * (40 + 20), 100 + y * (40 + 20));
+		//implemented, but need perfecting
+
+		for (int y = 0; y < Config.ENEMY_ROW_COUNT_ONLOAD; y++)
+		{
+
+
+			int enemySpacing = (int) ( (getWidth() - ((Config.ENEMY_WIDTH )* Config.ENEMY_COLLUNM_COUNT_ONLOAD) ) / Config.ENEMY_COLLUNM_COUNT_ONLOAD);		
+			for (int i = 0; i <  Config.ENEMY_COLLUNM_COUNT_ONLOAD; i++)
+			{
+				spawnEnemies(((enemySpacing + Config.ENEMY_WIDTH) * i) + (int) enemySpacing/2, y * (Config.ENEMY_HEIGHT + Config.BULLET_HEIGHT));
 			}
 		}
 
-		
 		//spawning walls,
 		//will spawn based on the width of the screen.
-		
+
 		int wallSpacing = (int) ( (getWidth() - (Config.WALL_MIN_WIDTH * Config.WALLS_NUMBER_ON_LOAD) ) / Config.WALLS_NUMBER_ON_LOAD);		
 		for (int i = 0; i <  Config.WALLS_NUMBER_ON_LOAD; i++)
 		{
@@ -199,8 +205,8 @@ public class SpaceCraftsApp extends GameApplication
 
 		getGameWorld().addEntity(player);
 	}
-	
-	
+
+
 
 
 
