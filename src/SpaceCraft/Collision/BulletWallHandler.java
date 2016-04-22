@@ -75,7 +75,12 @@ public class BulletWallHandler extends CollisionHandler
 			{
 				//here to catch two bullets hitting wall at the same time
 				wall.removeFromWorld();
+			}catch (ArrayIndexOutOfBoundsException aioobe)
+			{
+				//here to catch two bullet hitting wall at the same time
+				wall.removeFromWorld();
 			}
+			
 			//
 			//			Entity laserHit = EntityCreator.newLaserHit(hitPosition);
 			//
